@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="600" version="1.1" width="900" style="overflow: hidden; position: relative; left: -0.583344px; top: -0.75px;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="600" version="1.1" width="900" style="overflow: hidden; position: relative; left: -0.866665px; top: -0.75px;">
   <desc>Created with Raphaël 2.1.4</desc>
   <defs />
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#9c9c9c" stroke="#ffffff" d="M388.57754,0L388.99341,4.49427C62.28431,36.71443,12.08832,345.44606,9.65962,369.10195C16.99941,370.19961,15.46295,369.85074,21.3608,370.14932999999996C23.14754,359.95419,32.29148,259.97101999999995,109.48827,164.72663999999997C165.58438999999998,95.51478999999998,260.10423000000003,26.473569999999967,399.12563,15.977529999999973C398.97137,13.805809999999973,398.70974,11.007159999999974,398.70974,11.007159999999974L411.05364000000003,10.854819999999973L411.05364000000003,0.20946999999997296L388.57754,0ZM433.92672,0L433.51083,10.60725L445.26872,11.00716C445.26872,11.00716,444.63887,12.56112,445.04188999999997,15.82518C681.07981,34.05442,805.4005099999999,221.92049999999998,822.7122099999999,371.33004C833.2368099999999,370.10745,823.7934099999999,371.54332999999997,834.3188099999999,370.32072999999997C790.19011,53.83152,495.94788,5.01073,456.59184,4.49427L456.59184,1.2187900000000003L433.92672,0ZM19.1302,402.92328L0,403.93258L0.54819,414.52079999999995L8.22296,414.12087999999994L7.107660000000001,456.1880699999999L25.44392,456.2451699999999L26.370189999999997,555.9190699999999L88.31651,555.9190699999999L88.29760999999999,556.90933L80.11245,556.83313L79.58314999999999,581.03747L90.18793999999998,581.266L90.49039999999998,567.5355999999999L98.71335999999998,567.5926999999999L99.11032999999998,545.3117599999999L36.861559999999976,545.3117599999999L35.93528999999997,445.6568899999999L17.977099999999975,445.61878999999993L19.130199999999974,402.92315999999994ZM825.7367099999999,404.42771999999997L825.7367099999999,446.34255999999993L808.04311,446.45680999999996L807.1736099999999,545.34994L745.9079099999999,545.7498499999999L745.9079099999999,568.9639299999999L754.3575099999999,568.9259299999999L754.3575099999999,582.3706699999999L764.96241,582.3706699999999L764.96241,558.29964L756.51261,558.31864L756.51261,556.2809699999999L817.66491,555.8810599999999L818.55341,456.98794999999996L836.32251,456.89275L836.32251,415.98721L843.41131,416.61565L844.31871,406.04648000000003L825.73671,404.42782000000005ZM542.6588599999999,514.4613099999999L512.6592199999999,514.9373999999999L513.1507099999999,543.92167L332.2266199999999,544.66437L332.9638399999999,515.9276699999999L302.0001399999999,515.1088L302.01903999999985,520.40289L240.90445999999986,520.28864L240.86665999999985,514.9945299999999L212.02012999999985,514.95643L211.54753999999986,545.9974L144.13813999999985,545.74984L143.00395999999986,567.9736499999999L151.20799999999986,568.0498499999999L151.18919999999986,581.6850199999999L161.77507999999986,581.7040199999999L161.81287999999986,557.5568099999999L154.13811999999987,557.48061L154.19491999999988,556.39513L221.98237999999986,556.64269L222.45495999999986,525.58267L230.33766999999986,525.58267L230.37546999999986,530.87677L312.64290999999986,531.0291199999999L312.6240099999999,526.00163L322.09458999999987,526.24921L321.33844999999985,555.30964L523.9068999999998,554.49077L523.4343099999999,525.3732L531.6005699999998,525.23989L531.3737199999998,530.76253L614.0192199999998,530.70543L614.1138199999998,525.60176L621.8641399999998,525.62076L621.7697399999998,557.15687L688.3473099999999,556.98548L688.3473099999999,558.5280100000001L682.7331099999999,558.5470100000001L682.5630099999998,582.2371700000001L693.1488099999998,582.3133700000001L693.2428099999998,569.1161900000001L698.9517099999998,569.1161900000001L698.9517099999998,546.3591600000001L632.3928399999999,546.5305500000001L632.4874399999999,515.0325300000001L603.7165399999999,514.9754300000001L603.6220399999999,520.11719L542.4318099999998,520.15529L542.6586599999998,514.46127Z" stroke-width="0.3" stroke-linejoin="round" />
@@ -25,19 +25,19 @@
     <title>place n° 191</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M589.98491,178.22135L595.78769,169.77185L602.72819,174.72185L609.3094100000001,179.70635L603.0101900000001,187.79059999999998L596.0524100000001,182.53834999999998L589.9849100000001,178.22134999999997Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 198</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M607.43129,207.2084L613.74329,212.84915L618.80729,217.62740000000002L611.61401,224.85065000000003L606.07679,219.62315000000004L600.71429,214.82390000000004L607.43129,207.20840000000004Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 188</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M595.50887,197.41482L601.10687,201.88182L607.4308699999999,207.20832000000001L600.7138699999999,214.82382L594.2706499999999,209.39307000000002L589.2763699999999,205.41057000000004L595.5088699999999,197.41483000000002Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 189</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M627.33257,209.05295L634.56485,201.78470000000002L641.44385,208.75145L646.21457,213.85895L638.55485,220.6757L632.76557,214.51445L627.33257,209.05295Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 195</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M615.47105,198.07835L622.25105,190.38785000000001L629.53955,196.97885000000002L634.5645499999999,201.78410000000002L627.33227,209.05310000000003L621.33827,203.35085000000004L615.47105,198.07835000000003Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 196</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M603.01031,187.79075L609.30881,179.7065L616.36331,185.375L622.25081,190.388L615.47081,198.07850000000002L608.84459,192.46250000000003L603.01031,187.79075000000003Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 197</title>
@@ -79,7 +79,7 @@
     <title>place n° 200</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M552.15903,144.75987L559.19178,148.14837L567.16653,152.26962L562.42503,161.35962L554.78253,157.40038L547.97403,154.11763000000002L552.1590299999999,144.75988Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 201</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M622.24085,159.7958L627.69707,164.0978L633.2770700000001,168.68630000000002L626.6523500000001,176.51105L621.1788500000001,172.01105L615.9903500000001,167.92430000000002L622.2408500000001,159.7958Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 206</title>
@@ -190,7 +190,7 @@
     <title>place n° 166</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M490.62896,282.4559L497.83046,286.23064999999997L506.13446,291.29015L500.67821,299.9699L492.91796,295.2254L486.44545999999997,291.81964999999997L490.62895999999995,282.4559Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 167</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M509.46543,240.30065L517.14318,244.32139999999998L525.45618,249.14464999999998L520.26543,257.98715L512.3889300000001,253.40464999999998L505.2204300000001,249.63589999999996L509.4654300000001,240.30064999999996Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 175</title>
@@ -205,7 +205,7 @@
     <title>place n° 165</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M499.87511,261.76317L495.68861,271.12917L502.38761,274.70142L508.53311,278.30742L513.67961,269.44092L507.22136,265.65867000000003L499.87511,261.76317Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 171</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M533.99936,226.14882L529.0381100000001,235.12182L521.6611100000001,231.07782L515.0588600000001,227.78457L519.2393600000001,218.42382L526.6283600000002,222.11083L533.9993600000001,226.14883Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 180</title>
@@ -235,7 +235,7 @@
     <title>place n° 178</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M574.08701,255.79835L567.0332599999999,263.2376L560.8952599999999,257.7176L555.1052599999999,252.8996L561.5035099999999,244.89185L567.74876,250.09085000000002L574.08701,255.79835000000003Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 177</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M580.89263,230.5598L587.28191,236.23205L592.3429100000001,241.04104999999998L585.18263,248.38054999999997L579.22091,242.75029999999998L574.26716,238.38379999999998L580.8926299999999,230.55979999999997Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 182</title>
@@ -265,7 +265,7 @@
     <title>place n° 104</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M678.72299,303.79872L682.11001,311.55297L684.71991,318.00372000000004L675.1664900000001,321.57672L672.3142100000001,314.51997L669.4379900000001,307.92522L678.7229900000001,303.79872Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 101</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M671.96927,289.93505L675.19727,296.3228L678.7230500000001,303.79879999999997L669.4380500000001,307.9253L665.8477700000001,300.30755L662.9677700000001,294.60755L671.96927,289.93505Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 102</title>
@@ -280,7 +280,7 @@
     <title>place n° 110</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M675.16631,321.5768L684.7198099999999,318.0038L687.3756099999999,325.08005L689.94211,332.51030000000003L680.0998099999999,335.4173L677.6375899999999,328.2068L675.16631,321.5768Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 100</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M655.77617,281.66787L664.47845,276.45537L668.18045,282.92187L671.9694499999999,289.93513L662.96795,294.60763000000003L659.11295,287.46163L655.77617,281.66787Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 103</title>
@@ -355,19 +355,19 @@
     <title>place n° 132</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M773.13441,248.6294L782.66311,243.9764L785.5889099999999,250.3109L788.7914099999999,257.0624L779.01141,261.33590000000004L775.9799099999999,254.63165000000004L773.1344099999999,248.62940000000003Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 151</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M766.80181,236.14047L776.1318100000001,231.23547L779.2233100000001,237.31797L782.66281,243.97647L773.1341100000001,248.62947L769.94581,242.20347L766.80181,236.14047000000002Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 152</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M777.11731,291.64565L779.77451,299.21465L781.51901,304.39865000000003L771.70981,307.40615L769.54221,300.95615000000004L767.43331,295.0289L777.11731,291.64565000000005Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 136</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M772.26571,279.056L774.57871,284.89099999999996L777.11751,291.64549999999997L767.4335100000001,295.02874999999995L764.8715100000001,288.22849999999994L762.7197100000001,282.81199999999995L772.2657100000001,279.056Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 137</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M766.97541,266.64695L769.45411,272.3087L772.26591,279.0557L762.7199099999999,282.8117L759.9291099999999,276.12395L757.58161,270.7652L766.97541,266.64695Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 138</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M739.97471,269.40567L743.4277099999999,276.85917L746.2567099999999,283.33017L736.7767099999999,287.24592L733.4580099999998,279.69792L730.6897099999999,273.76167000000004L739.9747099999998,269.40567000000004Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 128</title>
@@ -379,7 +379,7 @@
     <title>place n° 127</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M760.02621,223.88817L769.05621,218.57217L772.66891,225.05893L776.1324099999999,231.23593L766.80171,236.14016999999998L763.05471,229.23492L760.02621,223.88817Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 153</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M761.55841,206.2163L765.12321,212.08355L769.05621,218.57255L760.02621,223.88855L756.59871,218.06255000000002L752.81421,211.88555000000002L761.55841,206.21630000000002Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 154</title>
@@ -388,13 +388,13 @@
     <title>place n° 155</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M745.35871,182.47925L749.57521,188.387L753.72501,194.28725L745.17651,200.14775L740.59321,193.5245L737.12001,188.69299999999998L745.35871,182.47924999999998Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 156</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M736.64221,171.06995L740.73041,176.3657L745.35871,182.47895L737.11991,188.6927L732.67911,182.7317L728.6577100000001,177.5342L736.6421100000001,171.06995Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 157</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M761.24571,254.432L764.2569100000001,260.711L766.97571,266.64725L757.58121,270.7655L754.7889100000001,264.67699999999996L752.0192100000002,258.90874999999994L761.2457100000001,254.43199999999993Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 139</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M755.09401,242.42765L758.0363100000001,248.0384L761.2455100000001,254.43215L752.0190100000001,258.9089L749.0085100000001,252.90890000000002L746.0415100000001,247.25465000000003L755.0940100000001,242.42765000000003Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 140</title>
@@ -451,7 +451,7 @@
     <title>place n° 92</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M604.39685,339.7262L607.9368499999999,348.1592L611.1003499999999,356.7152L601.28807,359.72645L598.07885,351.1277L594.95507,343.7417L604.39685,339.7262Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 85</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M596.24645,323.38662L600.54995,331.57437L604.39667,339.72612L594.9549499999999,343.74161999999995L591.0189499999999,335.44286999999997L587.2741699999999,328.35537L596.2464499999999,323.38662Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 86</title>
@@ -502,7 +502,7 @@
     <title>place n° 39</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M758.16151,358.51212L768.26621,356.74737999999996L769.50751,363.80713L770.98351,373.20387999999997L760.81271,374.53587999999996L759.4987100000001,366.14412999999996L758.16151,358.51212Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 52</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M754.93371,342.59727L764.91841,340.22801999999996L766.51221,347.71527999999995L768.26571,356.74751999999995L758.16171,358.51228L756.55671,350.21727L754.9337099999999,342.59727Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 53</title>
@@ -520,7 +520,7 @@
     <title>place n° 47</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M789.17811,415.04187L799.4336099999999,414.69763L799.4436099999999,423.10812L799.3146099999999,430.24287L789.0516099999999,430.18816999999996L789.1866099999999,422.50368L789.1766099999999,415.04191999999995Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 58</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M788.74381,399.90342L798.97531,399.16092L799.2903100000001,407.45067L799.4335100000001,414.69793L789.1780100000001,415.04218L789.03101,407.44917L788.74381,399.90342Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 59</title>
@@ -556,7 +556,7 @@
     <title>place n° 70</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M804.91491,340.26522L815.16291,338.38722L816.48211,345.90897L817.5254100000001,352.54722000000004L807.5339100000001,354.15747000000005L806.1704100000001,346.58022000000005L804.9149100000001,340.26522000000006Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 71</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M715.96811,423.6566L726.22811,423.5276L726.08491,431.33435000000003L725.71511,439.38485000000003L715.4558099999999,439.0076L715.85781,430.20785L715.96811,423.6566Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 31</title>
@@ -565,7 +565,7 @@
     <title>place n° 24</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M669.11435,422.41812L668.95535,429.71486999999996L668.62457,436.26986999999997L658.3938499999999,435.51086999999995L658.73885,428.28311999999994L658.85735,422.28236999999996L669.11435,422.41811999999993Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 17</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M715.45621,439.00745L725.71541,439.3847L725.03441,448.3142L724.31971,455.18645000000004L714.08521,454.30445000000003L714.96421,445.70720000000006L715.4562099999999,439.00745000000006Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 30</title>
@@ -583,7 +583,7 @@
     <title>place n° 21</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M650.07065,356.89047L651.86687,363.66972L653.29265,369.72747L663.28415,367.40097L661.6461499999999,360.49422L659.89937,353.96396999999996L650.07065,356.89046999999994Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 22</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M739.66051,406.78895L749.90021,406.14695L750.14621,414.35195L750.17621,423.1742L739.91701,423.3197L739.89501,414.9092L739.66031,406.78895Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 40</title>
@@ -622,7 +622,7 @@
     <title>place n° 43</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M741.48271,345.89322L742.93101,352.65297L744.58551,361.13772L734.48151,362.90697L732.9042099999999,354.81597L731.4995099999999,348.24447L741.4827099999999,345.89322Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 44</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M737.82431,330.7709L739.49981,337.3934L741.48281,345.89315L731.49961,348.2444L729.77161,340.79915L727.9888100000001,333.69665L737.8243100000001,330.7709Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 45</title>
@@ -634,7 +634,7 @@
     <title>place n° 64</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M811.71611,324.10362L813.65411,332.28612L815.16311,338.38737L804.9151099999999,340.26536999999996L803.2943099999999,332.81111999999996L801.7973099999999,326.47286999999994L811.71611,324.1036199999999Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 72</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M807.93761,309.96275L809.9206099999999,317.1215L811.7161099999998,324.10325L801.7974099999999,326.47325L799.8736099999999,318.9515L798.1876099999998,312.80375000000004L807.9376099999998,309.96275Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 73</title>
@@ -679,7 +679,7 @@
     <title>place n° 15</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M644.73275,404.67808L634.60847,405.38682L634.03097,397.72332L633.34625,391.26432L643.39625,389.81907L644.16647,397.15632L644.73275,404.67807Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 14</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M645.19487,419.58507L635.00765,419.56336999999996L634.91315,412.36562999999995L634.60865,405.38686999999993L644.73287,404.67812999999995L645.09965,412.99336999999997L645.19485,419.58511999999996Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 13</title>
@@ -850,16 +850,16 @@
     <title>place n° 250</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M428.60314,243.47427L428.63164,253.73352L436.20815,254.24652L443.2889,255.02128L444.34790000000004,244.82502L436.90565000000004,244.02102L428.60315,243.47427Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 251</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M445.11116,197.01785L444.27491,207.23285L435.88390999999996,206.56535000000002L428.50990999999993,206.26460000000003L428.48360999999994,196.01510000000002L436.73585999999995,196.35260000000002L445.11110999999994,197.01785Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 261</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M461.61626,199.30115L459.91526,209.40665L451.46051,208.0799L444.27476,207.23315000000002L445.11101,197.01815000000002L453.10526000000004,197.96240000000003L461.61626000000007,199.30115000000004Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 260</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M482.45733,229.2125L491.14233,232.10225L499.66909000000004,235.3565L495.47808000000003,244.715L486.88459000000006,241.46675L479.26534000000004,238.95274999999998L482.45734000000004,229.21249999999998Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 253</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M464.77451,224.57922L473.78276,226.73471999999998L482.45726,229.21272L479.26526,238.95297L470.42276000000004,236.44947L462.61676000000006,234.59546999999998L464.7745100000001,224.57921999999996Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 254</title>
@@ -868,7 +868,7 @@
     <title>place n° 255</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M475.21953,251.44077L483.37278000000003,254.13701999999998L490.13103,256.66152L485.94078,266.02377L478.90578,263.41452000000004L472.04253,261.18777000000006L475.21953,251.44077000000004Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 248</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M443.94079,173.42652L451.45654,174.14727000000002L459.37278000000003,175.18153L457.95678000000004,185.33128000000002L450.08703,184.30452000000002L443.24253000000004,183.65128L443.94078,173.42652Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 266</title>
@@ -889,7 +889,7 @@
     <title>place n° 264</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M457.95709,185.33127L459.37309,175.18151999999998L467.34559,176.51201999999998L474.64759000000004,177.99026999999998L472.51984000000004,188.01551999999998L464.98384000000004,186.49676999999997L457.95709000000005,185.33126999999996Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 265</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M509.38481,213.65697L505.19756,223.01247L498.20906,220.14972L490.46831000000003,217.31997L493.84931,207.64422000000002L501.62381,210.48148L509.38481,213.65698Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 257</title>
@@ -1291,7 +1291,7 @@
     <title>place n° 416</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M303.95808,259.33812L296.62833,264.99312L289.73208,270.80562L296.64033,278.38137L303.67683,272.47812L310.03834,267.59188L303.95809,259.33813Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 415</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M319.12361,249.14427L311.02061,254.35228L303.95786,259.33828L310.03886,267.59203L317.52761,262.33078L324.31210999999996,257.98753L319.12361,249.14427999999998Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 414</title>
@@ -1558,7 +1558,7 @@
     <title>place n° 510</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M210.73323,349.7318L220.53948,352.74080000000004L222.98448,345.60380000000004L225.94848,337.92230000000006L216.43248,334.0943000000001L213.44973,341.8073000000001L210.73323,349.73180000000013Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 507</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M197.20908,250.80252L205.26558,257.06502L210.15109,250.75977L214.48459,245.47677000000002L206.77384,238.70352000000003L202.23784,244.28052000000002L197.20909,250.80253000000002Z" stroke-width="0.3" stroke-linejoin="round">
     <title>place n° 514</title>
@@ -1756,138 +1756,6 @@
     <title>place n° 589</title>
   </path>
   <path style="stroke-linejoin: round; cursor: pointer;" fill="#cbcbcb" stroke="#ffffff" d="M200.04131,419.58507L210.22706000000002,419.56336999999996L210.32306000000003,412.36562999999995L210.62981000000002,405.38686999999993L200.50406,404.67812999999995L200.13731,412.99336999999997L200.04131,419.58511999999996Z" stroke-width="0.3" stroke-linejoin="round">
-    <title />
+    <title>place n° 590</title>
   </path>
-  <rect x="0.5" y="0.5" width="160.3333282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Claude Sturni (place n° 71)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="164.9166717529297" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Henri Guaino (place n° 156)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="179.5833282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" transform="matrix(1,0,0,1,542.1333,420.25)" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000" transform="matrix(1,0,0,1,542.1333,420.25)">
-    <tspan dy="3.6666670441627502">M. Jean-Marie Tétart (place n° 58)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="179.5833282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" transform="matrix(1,0,0,1,517.1333,368.25)" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000" transform="matrix(1,0,0,1,517.1333,368.25)">
-    <tspan dy="3.6666670441627502">M. Lucien Degauchy (place n° 52)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="185.0833282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" transform="matrix(1,0,0,1,483.1333,355.25)" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000" transform="matrix(1,0,0,1,483.1333,355.25)">
-    <tspan dy="3.6666670441627502">M. Jean-Louis Costes (place n° 44)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="176.8333282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" transform="matrix(1,0,0,1,433.1333,318.25)" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000" transform="matrix(1,0,0,1,433.1333,318.25)">
-    <tspan dy="3.6666670441627502">M. Olivier Dassault (place n° 100)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="247.4166717529297" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" transform="matrix(1,0,0,1,432.1333,317.25)" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000" transform="matrix(1,0,0,1,432.1333,317.25)">
-    <tspan dy="3.6666670441627502">Mme Nathalie Kosciusko-Morizet (place n° 101)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="175.9166717529297" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" transform="matrix(1,0,0,1,416.1333,425.25)" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000" transform="matrix(1,0,0,1,416.1333,425.25)">
-    <tspan dy="3.6666670441627502">M. Christophe Priou (place n° 17)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="204.3333282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">Mme Laurence Arribagé (place n° 151)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="175.9166717529297" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Michel Heinrich (place n° 139)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="186" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Jean-Louis Christ (place n° 138)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="170.4166717529297" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Frédéric Reiss (place n° 136)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="160.3333282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Patrick Hetzel (place n° 72)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="208" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">Mme Jacqueline Fraysse (place n° 590)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="188.75" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Jean-Yves Caullet (place n° 507)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="244.6666717529297" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">Mme Martine Carrillon-Couvreur (place n° 415)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="144.75" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Luc Belot (place n° 251)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="197.9166717529297" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">Mme Chantal Berthelot (place n° 248)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="195.1666717529297" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Jean-Michel Couve (place n° 171)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="175" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Philippe Briand (place n° 177)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="205.25" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. François de Mazières (place n° 153)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="168.5833282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Benoist Apparu (place n° 14)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="149.3333282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Éric Woerth (place n° 22)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="172.25" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Jérôme Chartier (place n° 85)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="159.4166717529297" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Guy Teissier (place n° 167)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="197" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">Mme Colette Langlade (place n° 261)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="174.0833282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Philippe Kemel (place n° 265)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="177.75" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. François Loncle (place n° 253)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="159.4166717529297" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Yves Nicolin (place n° 189)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="145.6666717529297" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Éric Ciotti (place n° 196)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="208" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. François Rochebloine (place n° 201)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="163.0833282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Rémi Delatte (place n° 198)</tspan>
-  </text>
-  <rect x="0.5" y="0.5" width="163.0833282470703" height="22.833333015441895" rx="5" ry="5" fill="#e5f6fe" stroke="#add9ed" style="display: none;" stroke-width="1" />
-  <text style="text-anchor: start; font-family: &amp;quot;Arial&amp;quot;; font-size: 11px; display: none;" x="5" y="11" text-anchor="start" font-family="&amp;quot;Arial&amp;quot;" font-size="11px" stroke="none" fill="#000000">
-    <tspan dy="3.6666670441627502">M. Lionnel Luca (place n° 195)</tspan>
-  </text>
 </svg>
