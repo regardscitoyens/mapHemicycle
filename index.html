@@ -165,6 +165,15 @@ var map;
 
 var color_tone = d3.scaleOrdinal(d3.schemeDark2);
 
+function colorVotes(vote){
+  return {
+    "Pour": "green",
+    "Contre": "red",
+    "Abstention": "grey",
+    "Non-votant": "black"
+  }[vote] || "white"
+}
+
 map = d3.select("#map");
 
 // map.append('svg')
@@ -255,7 +264,7 @@ var d = data_deputes[i];
 // console.log(d);
 
 svg_map.select('path[place="' + d.place_en_hemicycle +  '"]')
-.attr('fill', color_tone(d.groupe_sigle))
+.attr('fill', colorVotes(d.vote))
 .attr('title', d.nom)
 .attr('id', 'id_' + d.place_en_hemicycle)
 // .on('click', mouseover(d))
