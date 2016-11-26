@@ -272,10 +272,10 @@ var d = data_deputes[i];
 
 svg_map.select('path[place="' + d.place_en_hemicycle +  '"]')
 .attr('fill', colorVotes(d.vote))
-.attr('title', d.nom)
 .attr('id', 'id_' + d.place_en_hemicycle)
 // .on('click', mouseover(d))
 // .on('mouseout', mouseout)
+.append('title').text(d.nom)
 ;
 
 
