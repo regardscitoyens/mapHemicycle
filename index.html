@@ -159,7 +159,62 @@
 </body>
 <script type="text/javascript">
 
+var map;
 
+map = d3.select("#map");
+
+// map.append('svg')
+
+
+   queue()
+   .defer(d3.csv, "data/deputes.csv")
+   .defer(d3.json, "data/exemple-scrutin-ordinaire.json")
+   .await(make_svg);
+
+function make_svg (error,data_deputes, data_scrutin)
+{
+
+
+d3.xml("img/hemicycle-an.svg").mimeType("image/svg+xml").get(function(error, xml) {
+
+
+  if (error) throw error;
+  // document.body.appendChild(xml.documentElement);
+
+  // d3.select("#map").appendChild(xml.documentElement);
+
+
+  var imported_svg= xml.documentElement;
+
+map.node().appendChild(imported_svg);
+
+
+// Colorize seat
+// d3.select('#map').select('svg').selectAll('path[place="303"]').attr('fill', 'red');
+
+var all_paths = d3.select('#map').select('svg').selectAll('path');
+
+
+console.log(all_paths);
+
+// for (i in all_paths)
+// {
+// console.log(all_paths[i].attr('place'));
+
+
+
+// }
+
+
+
+console.log(data_deputes);
+
+
+})
+
+
+}
+;
 
 
         function responsivefy(svg){
