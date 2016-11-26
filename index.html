@@ -165,9 +165,6 @@
 
 var map;
 
-
-var color_tone = d3.scaleOrdinal(d3.schemeDark2);
-
 function colorVotes(vote){
   return {
     "Pour": "green",
@@ -175,6 +172,16 @@ function colorVotes(vote){
     "Abstention": "grey",
     "Non-votant": "black"
   }[vote] || "white"
+}
+function colorGroupes(vote){
+  return {
+    "NI": "green",
+    "GDR": "red",
+    "SER": "#df65b0",
+    "LR": "#08589e",
+    "UDI": "#4eb3d3",
+    "RRDP": "purple"
+  }[vote] || "grey"
 }
 
 map = d3.select("#map");
@@ -225,7 +232,6 @@ function handleVotes(deputes, typ, data){
 }
 
 function attach_votes(data_scrutin, deputes) {
-  console.log(data_scrutin)
   data_scrutin.ventilationVotes.organe.groupes.groupe.forEach(function(g){
     var groupe = {
       id: g.organeRef,
@@ -240,167 +246,81 @@ function attach_votes(data_scrutin, deputes) {
   });
 }
 
-function make_svg (error, data_deputes, data_scrutin)
-{
+function make_svg (error, data_deputes, data_scrutin) {
   var deputes = {};
   data_deputes.forEach(function(d){
     deputes[d.id_an] = d;
   });
   attach_votes(data_scrutin, deputes);
   console.log(deputes);
-  console.log($("#a_propos"), data_scrutin.titre);
   $("#a_propos").html(data_scrutin.titre)
 
-// color_tone.domain(_.uniq(data_deputes.map(function(d) { return d.groupe_sigle})));
-
-d3.xml("img/hemicycle-an.svg").mimeType("image/svg+xml").get(function(error, xml) {
-
-
-  if (error) throw error;
-
-console.log(data_deputes);
-
-
-// console.log(_.uniq(data_deputes.map(function(d) { return d.groupe_sigle})));
-
-
-
-
-  var imported_svg= xml.documentElement;
-
-map.node().appendChild(imported_svg);
-
-
-// Colorize seat
-// d3.select('#map').select('svg').selectAll('path[place="303"]').attr('fill', 'red');
-var svg_map = d3.select('#map').select('svg');
-
-for (i in data_deputes){
-
-var d = data_deputes[i];	
-
-// console.log(d);
-
-svg_map.select('path[place="' + d.place_en_hemicycle +  '"]')
-    .attr('fill', (groupesViz ? color_tone(d.groupe_sigle) : colorVotes(d.vote)))
-.attr('id', 'id_' + d.place_en_hemicycle)
-// .on('click', mouseover(d))
-// .on('mouseout', mouseout)
-.append('title').text(d.nom)
-;
-
-
-var this_path = svg_map.select('path[place="' + d.place_en_hemicycle +  '"]');
-
-this_path.datum(d);
-
-
-this_path
-.on('click', function(d){return mouseover(d)});
-
-// svg_map.select("#" + )
-
-}
-
-
-function mouseover(d){
-console.log(d);
-
-}
-
-
-function mouseout(){
-
-}
-
-
-})
-
-
-}
-;
-
-
-        function responsivefy(svg){
-
-// get container + svg aspect ratio
-var container = d3.select(svg.node().parentNode),
-width = parseInt(svg.style('width')),
-height = parseInt(svg.style("height")),
-aspect = width / height;
-
-
-// add viewBox and preserve aspectratio properties
-// call resize so that svg resizes on initial page load
-svg.attr("viewBox", "0 0 " + width + " " + height)
-.attr("preserveAspectRatio", "xMinYMid")
-.call(resize);
-
-// to register multiple listeners for the same event type
-d3.select(window).on("resize." + container.attr("id"), resize);
-
-// if ($(window).width() < 768) {var screendef = 0;}
-
-
-d3.select(window).on("resize", function(){
-
-
-  if (_.isUndefined(map) == false){
-    if (window.innerWidth < 768)
-    {
-      map.setZoom(14);
+  d3.xml("img/hemicycle-an.svg").mimeType("image/svg+xml").get(function(error, xml) {
+  
+    if (error) throw error;
+  
+    var imported_svg= xml.documentElement;
+  
+    map.node().appendChild(imported_svg);
+    
+    // Colorize seat
+    var svg_map = d3.select('#map').select('svg');
+    
+    for (i in data_deputes){
+    
+      var d = data_deputes[i];	
+      
+      svg_map.select('path[place="' + d.place_en_hemicycle +  '"]')
+          .attr('fill', (groupesViz ? colorGroupes(d.groupe_sigle) : colorVotes(d.vote)))
+      .attr('id', 'id_' + d.place_en_hemicycle)
+      // .on('click', mouseover(d))
+      // .on('mouseout', mouseout)
+      .append('title').text(d.nom)
+      ;
+      
+      var this_path = svg_map.select('path[place="' + d.place_en_hemicycle +  '"]');
+      
+      this_path.datum(d);
+      
+      this_path.on('click', function(d){return mouseover(d)});
+      
     }
-    else{
-      map.setZoom(15);
+  });
+  
+  function responsivefy(svg){
+  
+    // get container + svg aspect ratio
+    var container = d3.select(svg.node().parentNode),
+    width = parseInt(svg.style('width')),
+    height = parseInt(svg.style("height")),
+    aspect = width / height;
+    
+    // add viewBox and preserve aspectratio properties
+    // call resize so that svg resizes on initial page load
+    svg.attr("viewBox", "0 0 " + width + " " + height)
+    .attr("preserveAspectRatio", "xMinYMid")
+    .call(resize);
+    
+    // to register multiple listeners for the same event type
+    d3.select(window).on("resize." + container.attr("id"), resize);
+    
+    // if ($(window).width() < 768) {var screendef = 0;}
+    
+    d3.select(window).on("resize", function(){
+  
+    });
+    
+    function resize() {
+    
+      var targetWidth = parseInt(container.style("width"));
+    
+      if (_.isNaN(targetWidth) == false){
+        svg.attr("width", targetWidth);
+        svg.attr("height", Math.round(targetWidth / aspect));
+      }
     }
-
-  }
-
-  is_small_screen = d3.select('#container_in').classed('is-small-screen') == true ? true :false;
-
-}
-);
-
-function resize() {
-
-  var targetWidth = parseInt(container.style("width"));
-
-  if (_.isNaN(targetWidth) == false){
-    svg.attr("width", targetWidth);
-    svg.attr("height", Math.round(targetWidth / aspect));
   }
 }
-}
-
-$(function() {
-// Click on the form submit button to fire request
-$('#city_dep').change(function() {
-
-  var this_city = $('#city_dep').val();
-
-  if (this_city != 0){
-    queue()
-    .defer(d3.csv, 'data/geocode/' + this_city)
-    .await(makeMap);
-
-
-    textChange(cities_map_files_inverted[this_city]);
-
-    city_name
-    .text("de " + cities_map_files_inverted[this_city]) + ' (94)';
-    if (is_small_screen == true){
-      d3.select('#left_pannel').classed('is-visible', false)
-      .attr('aria-hidden', 'true');
-      d3.select('.mdl-layout__obfuscator').classed('is-visible', false);
-    }
-
-    d3.select("#loading_grid").style('display', 'flex');
-
-  }
-});
-});
-
-
 
 </script>
 </html>
