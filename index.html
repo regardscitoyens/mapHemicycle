@@ -135,6 +135,8 @@
         <header id="header_left"  class="mdl-color--blue-grey-900">
         </header>
 
+          <button onclick="loadTest('solennel')">Scrutin solennel</button>
+          <button onclick="loadTest('ordinaire')">Scrutin ordinaire</button>
 
       </nav>
     </div>
@@ -181,10 +183,14 @@ map = d3.select("#map");
 var color;
 
 
+function loadTest(name) {
+  $("svg").remove()
    queue()
    .defer(d3.csv, "data/deputes.csv")
-   .defer(d3.json, "data/exemple-scrutin-solennel.json")
+   .defer(d3.json, "data/exemple-scrutin-"+name+".json")
    .await(make_svg);
+}
+loadTest('solennel');
 
 var typesVote = {
   abstentions: "Abstention",
