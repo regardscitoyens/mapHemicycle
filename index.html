@@ -135,8 +135,9 @@
         <header id="header_left"  class="mdl-color--blue-grey-900">
         </header>
 
-          <button onclick="loadTest('solennel')">Scrutin solennel</button>
-          <button onclick="loadTest('ordinaire')">Scrutin ordinaire</button>
+        <button onclick="loadGroupes()">Groupes politiques</button>
+        <button onclick="loadTest('solennel')">Scrutin solennel</button>
+        <button onclick="loadTest('ordinaire')">Scrutin ordinaire</button>
 
       </nav>
     </div>
@@ -180,17 +181,26 @@ map = d3.select("#map");
 
 // map.append('svg')
 
-var color;
+var color, groupesViz;
 
-
+function loadGroupes() {
+  groupesViz = true;
+  loadData("ordinaire");
+  $("#a_propos").html("")
+}
 function loadTest(name) {
+  groupesViz = false;
+  loadData(name)
+}
+
+function loadData(name) {
   $("svg").remove()
    queue()
    .defer(d3.csv, "data/deputes.csv")
    .defer(d3.json, "data/exemple-scrutin-"+name+".json")
    .await(make_svg);
 }
-loadTest('solennel');
+loadGroupes();
 
 var typesVote = {
   abstentions: "Abstention",
@@ -238,6 +248,7 @@ function make_svg (error, data_deputes, data_scrutin)
   });
   attach_votes(data_scrutin, deputes);
   console.log(deputes);
+  console.log($("#a_propos"), data_scrutin.titre);
   $("#a_propos").html(data_scrutin.titre)
 
 // color_tone.domain(_.uniq(data_deputes.map(function(d) { return d.groupe_sigle})));
@@ -271,7 +282,7 @@ var d = data_deputes[i];
 // console.log(d);
 
 svg_map.select('path[place="' + d.place_en_hemicycle +  '"]')
-.attr('fill', colorVotes(d.vote))
+    .attr('fill', (groupesViz ? color_tone(d.groupe_sigle) : colorVotes(d.vote)))
 .attr('id', 'id_' + d.place_en_hemicycle)
 // .on('click', mouseover(d))
 // .on('mouseout', mouseout)
