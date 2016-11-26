@@ -200,6 +200,7 @@ var typesVote = {
 };
 
 function handleVotes(deputes, typ, data){
+  if (!data) data = {};
   if (data[typ]) {
     if (data[typ] === "0") {
       data[typ] = {votant: []};
