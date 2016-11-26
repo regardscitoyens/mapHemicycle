@@ -21,14 +21,10 @@
   <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
   <meta name="msapplication-TileColor" content="#3372DF">
 
-
-
   <link rel="stylesheet" href="css/font-roboto.css">
   <link rel="stylesheet" href="css/icons-material.css">
   <link rel="stylesheet" href="css/material min..css">
-  <link rel="stylesheet" href="css/mdl-selectfield.min.css">
   <link rel="stylesheet" href="css/style.css">
-
 
   <style>
     .background {
@@ -57,9 +53,6 @@
 
     #navigation_form label{
       color: #eee;
-    }
-    .mdl-selectfield__select, .mdl-selectfield{
-      width: 100%;
     }
 
     .mdl-layout-title{
@@ -158,13 +151,10 @@
     </div>
   </main>
 </div>
-<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-<script src="js/mdl-selectfield.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/material.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/d3.v4.min.js" charset="utf-8"></script>
-<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<script src="js/queue.min.js"></script>
 <script src="js/lodash.js"></script>
 </body>
 <script type="text/javascript">
@@ -228,7 +218,6 @@ $(function() {
 $('#city_dep').change(function() {
 
   var this_city = $('#city_dep').val();
-
 
   if (this_city != 0){
     queue()
