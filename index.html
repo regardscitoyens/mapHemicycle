@@ -154,6 +154,7 @@
 <script src="js/material.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/d3.v4.min.js" charset="utf-8"></script>
+<script src="js/d3-scale-chromatic.v1.min.js"></script>
 <script src="js/queue.min.js"></script>
 <script src="js/lodash.js"></script>
 </body>
@@ -161,9 +162,14 @@
 
 var map;
 
+
+var color_tone = d3.scaleOrdinal(d3.schemeDark2);
+
 map = d3.select("#map");
 
 // map.append('svg')
+
+var color;
 
 
    queue()
@@ -179,17 +185,19 @@ var data_deputes = data_deputes;
 
 var data_scrutin = data_scrutin;
 
+
+// color_tone.domain(_.uniq(data_deputes.map(function(d) { return d.groupe_sigle})));
+
 d3.xml("img/hemicycle-an.svg").mimeType("image/svg+xml").get(function(error, xml) {
 
 
   if (error) throw error;
-  // document.body.appendChild(xml.documentElement);
-
-  // d3.select("#map").appendChild(xml.documentElement);
 
 console.log(data_deputes);
 
-console.log(data_scrutin);
+
+// console.log(_.uniq(data_deputes.map(function(d) { return d.groupe_sigle})));
+
 
 
 
@@ -200,23 +208,46 @@ map.node().appendChild(imported_svg);
 
 // Colorize seat
 // d3.select('#map').select('svg').selectAll('path[place="303"]').attr('fill', 'red');
+var svg_map = d3.select('#map').select('svg');
 
-var all_paths = d3.select('#map').select('svg').selectAll('path');
+for (i in data_deputes){
+
+var d = data_deputes[i];	
+
+// console.log(d);
+
+svg_map.select('path[place="' + d.place_en_hemicycle +  '"]')
+.attr('fill', color_tone(d.groupe_sigle))
+.attr('title', d.nom)
+.attr('id', 'id_' + d.place_en_hemicycle)
+// .on('click', mouseover(d))
+// .on('mouseout', mouseout)
+;
 
 
-console.log(all_paths);
+var this_path = svg_map.select('path[place="' + d.place_en_hemicycle +  '"]');
 
-// for (i in all_paths)
-// {
-// console.log(all_paths[i].attr('place'));
+this_path.datum(d);
 
 
+this_path
+.on('click', function(d){return mouseover(d)});
 
-// }
+// svg_map.select("#" + )
 
 
+}
 
 
+function mouseover(d){
+console.log(d);
+
+}
+
+
+function mouseout(){
+
+}
 
 
 })
