@@ -177,13 +177,51 @@ var color;
    .defer(d3.json, "data/exemple-scrutin-solennel.json")
    .await(make_svg);
 
-function make_svg (error,data_deputes, data_scrutin)
+var typesVote = {
+  abstentions: "Abstention",
+  pours: "Pour",
+  contres: "Contre",
+  nonVotants: "Non-votant"
+};
+
+function handleVotes(deputes, typ, data){
+  if (data[typ]) {
+    if (data[typ] === "0") {
+      data[typ] = {votant: []};
+    } else if (!Array.isArray(data[typ].votant)) {
+      data[typ].votant = [data[typ].votant];
+    }
+  }
+  (data[typ] || {votant: []}).votant.forEach(function(vt) {
+    deputes[vt.acteurRef.replace(/^PA/, '')].mandat = vt.mandatRef;
+    deputes[vt.acteurRef.replace(/^PA/, '')].vote = typesVote[typ];
+  });
+}
+
+function attach_votes(data_scrutin, deputes) {
+  console.log(data_scrutin)
+  data_scrutin.ventilationVotes.organe.groupes.groupe.forEach(function(g){
+    var groupe = {
+      id: g.organeRef,
+      n_membres: g.nombreMembresGroupe,
+      vote_majo: g.vote.positionMajoritaire,
+      decompteVoix: g.vote.decompteVoix
+    };
+    Object.keys(typesVote).forEach(function(v){
+      handleVotes(deputes, v, g.vote.decompteNominatif);
+      handleVotes(deputes, v, data_scrutin.miseAuPoint);
+    });
+  });
+}
+
+function make_svg (error, data_deputes, data_scrutin)
 {
-
-
-var data_deputes = data_deputes;
-
-var data_scrutin = data_scrutin;
+  var deputes = {};
+  data_deputes.forEach(function(d){
+    deputes[d.id_an] = d;
+  });
+  attach_votes(data_scrutin, deputes);
+  console.log(deputes);
 
 
 // color_tone.domain(_.uniq(data_deputes.map(function(d) { return d.groupe_sigle})));
@@ -234,7 +272,6 @@ this_path
 .on('click', function(d){return mouseover(d)});
 
 // svg_map.select("#" + )
-
 
 }
 
