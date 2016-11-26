@@ -216,18 +216,20 @@ var typesVote = {
   nonVotants: "Non-votant"
 };
 
-function handleVotes(deputes, typ, data){
+function handleVotes(deputes, data){
   if (!data) data = {};
-  if (data[typ]) {
-    if (data[typ] === "0") {
-      data[typ] = {votant: []};
-    } else if (!Array.isArray(data[typ].votant)) {
-      data[typ].votant = [data[typ].votant];
+  Object.keys(typesVote).forEach(function(typ){
+    if (data[typ]) {
+      if (data[typ] === "0") {
+        data[typ] = {votant: []};
+      } else if (!Array.isArray(data[typ].votant)) {
+        data[typ].votant = [data[typ].votant];
+      }
     }
-  }
-  (data[typ] || {votant: []}).votant.forEach(function(vt) {
-    deputes[vt.acteurRef.replace(/^PA/, '')].mandat = vt.mandatRef;
-    deputes[vt.acteurRef.replace(/^PA/, '')].vote = typesVote[typ];
+    (data[typ] || {votant: []}).votant.forEach(function(vt) {
+      deputes[vt.acteurRef.replace(/^PA/, '')].mandat = vt.mandatRef;
+      deputes[vt.acteurRef.replace(/^PA/, '')].vote = typesVote[typ];
+    });
   });
 }
 
@@ -239,11 +241,9 @@ function attach_votes(data_scrutin, deputes) {
       vote_majo: g.vote.positionMajoritaire,
       decompteVoix: g.vote.decompteVoix
     };
-    Object.keys(typesVote).forEach(function(v){
-      handleVotes(deputes, v, g.vote.decompteNominatif);
-      handleVotes(deputes, v, data_scrutin.miseAuPoint);
-    });
+    handleVotes(deputes, g.vote.decompteNominatif);
   });
+  handleVotes(deputes, data_scrutin.miseAuPoint);
 }
 
 function make_svg (error, data_deputes, data_scrutin) {
