@@ -1,0 +1,2362 @@
+{
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "dateScrutin": "2016-11-02",
+    "demandeur": {
+        "referenceLegislative": null,
+        "texte": "Conf\u00e9rence des pr\u00e9sidents"
+    },
+    "legislature": "14",
+    "miseAuPoint": {
+        "abstentions": null,
+        "contres": {
+            "votant": [
+                {
+                    "acteurRef": "PA259",
+                    "mandatRef": "PM645395"
+                },
+                {
+                    "acteurRef": "PA667",
+                    "mandatRef": "PM645574"
+                }
+            ]
+        },
+        "nonVotants": null,
+        "nonVotantsVolontaires": null,
+        "pours": {
+            "votant": [
+                {
+                    "acteurRef": "PA1226",
+                    "mandatRef": "PM645386"
+                },
+                {
+                    "acteurRef": "PA1977",
+                    "mandatRef": "PM645404"
+                },
+                {
+                    "acteurRef": "PA331973",
+                    "mandatRef": "PM645438"
+                },
+                {
+                    "acteurRef": "PA330613",
+                    "mandatRef": "PM645522"
+                },
+                {
+                    "acteurRef": "PA605694",
+                    "mandatRef": "PM645416"
+                },
+                {
+                    "acteurRef": "PA605804",
+                    "mandatRef": "PM645450"
+                },
+                {
+                    "acteurRef": "PA606202",
+                    "mandatRef": "PM645327"
+                },
+                {
+                    "acteurRef": "PA606586",
+                    "mandatRef": "PM645490"
+                },
+                {
+                    "acteurRef": "PA642684",
+                    "mandatRef": "PM663906"
+                },
+                {
+                    "acteurRef": "PA642885",
+                    "mandatRef": "PM701219"
+                }
+            ]
+        }
+    },
+    "modePublicationDesVotes": "DecompteNominatif",
+    "numero": "1346",
+    "objet": {
+        "libelle": "l'ensemble du projet de loi de financement de la s\u00e9curit\u00e9 sociale pour 2017 (premi\u00e8re lecture)",
+        "referenceLegislative": null
+    },
+    "organeRef": "PO644420",
+    "quantiemeJourSeance": "1",
+    "seanceRef": "RUANR5L14S2017IDS20333",
+    "sessionRef": "SCR5A2017O1",
+    "sort": {
+        "code": "adopt\u00e9",
+        "libelle": "l'Assembl\u00e9e nationale a adopt\u00e9"
+    },
+    "syntheseVote": {
+        "annonce": "l'Assembl\u00e9e nationale a adopt\u00e9",
+        "decompte": {
+            "abstention": "15",
+            "contre": "240",
+            "nonVotant": "1",
+            "pour": "272"
+        },
+        "nbrSuffragesRequis": "257",
+        "nombreVotants": "527",
+        "suffragesExprimes": "512"
+    },
+    "titre": "l'ensemble du projet de loi de financement de la s\u00e9curit\u00e9 sociale pour 2017 (premi\u00e8re lecture)",
+    "typeVote": {
+        "codeTypeVote": "SPS",
+        "libelleTypeVote": "scrutin public solennel",
+        "typeMajorite": "majorit\u00e9 absolue des suffrages exprim\u00e9s"
+    },
+    "uid": "VTANR5L14V1346",
+    "ventilationVotes": {
+        "organe": {
+            "groupes": {
+                "groupe": [
+                    {
+                        "nombreMembresGroupe": "288",
+                        "organeRef": "PO713077",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA334",
+                                            "mandatRef": "PM645206"
+                                        },
+                                        {
+                                            "acteurRef": "PA267278",
+                                            "mandatRef": "PM701030"
+                                        },
+                                        {
+                                            "acteurRef": "PA267479",
+                                            "mandatRef": "PM645504"
+                                        },
+                                        {
+                                            "acteurRef": "PA333611",
+                                            "mandatRef": "PM703299"
+                                        },
+                                        {
+                                            "acteurRef": "PA605952",
+                                            "mandatRef": "PM645049"
+                                        },
+                                        {
+                                            "acteurRef": "PA609042",
+                                            "mandatRef": "PM645076"
+                                        }
+                                    ]
+                                },
+                                "contres": null,
+                                "nonVotants": {
+                                    "votant": {
+                                        "acteurRef": "PA381",
+                                        "causePositionVote": "PSE",
+                                        "mandatRef": "PM645125"
+                                    }
+                                },
+                                "pours": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA356",
+                                            "mandatRef": "PM645358"
+                                        },
+                                        {
+                                            "acteurRef": "PA394",
+                                            "mandatRef": "PM645447"
+                                        },
+                                        {
+                                            "acteurRef": "PA543",
+                                            "mandatRef": "PM645064"
+                                        },
+                                        {
+                                            "acteurRef": "PA719",
+                                            "mandatRef": "PM645083"
+                                        },
+                                        {
+                                            "acteurRef": "PA810",
+                                            "mandatRef": "PM645557"
+                                        },
+                                        {
+                                            "acteurRef": "PA840",
+                                            "mandatRef": "PM645617"
+                                        },
+                                        {
+                                            "acteurRef": "PA606040",
+                                            "mandatRef": "PM645144"
+                                        },
+                                        {
+                                            "acteurRef": "PA1155",
+                                            "mandatRef": "PM645285"
+                                        },
+                                        {
+                                            "acteurRef": "PA1199",
+                                            "mandatRef": "PM645376"
+                                        },
+                                        {
+                                            "acteurRef": "PA1198",
+                                            "mandatRef": "PM645393"
+                                        },
+                                        {
+                                            "acteurRef": "PA1214",
+                                            "mandatRef": "PM645446"
+                                        },
+                                        {
+                                            "acteurRef": "PA1252",
+                                            "mandatRef": "PM645095"
+                                        },
+                                        {
+                                            "acteurRef": "PA1353",
+                                            "mandatRef": "PM645038"
+                                        },
+                                        {
+                                            "acteurRef": "PA610481",
+                                            "mandatRef": "PM645131"
+                                        },
+                                        {
+                                            "acteurRef": "PA1866",
+                                            "mandatRef": "PM645284"
+                                        },
+                                        {
+                                            "acteurRef": "PA1871",
+                                            "mandatRef": "PM645374"
+                                        },
+                                        {
+                                            "acteurRef": "PA1991",
+                                            "mandatRef": "PM645156"
+                                        },
+                                        {
+                                            "acteurRef": "PA2600",
+                                            "mandatRef": "PM645335"
+                                        },
+                                        {
+                                            "acteurRef": "PA2631",
+                                            "mandatRef": "PM645178"
+                                        },
+                                        {
+                                            "acteurRef": "PA2859",
+                                            "mandatRef": "PM645087"
+                                        },
+                                        {
+                                            "acteurRef": "PA2883",
+                                            "mandatRef": "PM645512"
+                                        },
+                                        {
+                                            "acteurRef": "PA1816",
+                                            "mandatRef": "PM701036"
+                                        },
+                                        {
+                                            "acteurRef": "PA610891",
+                                            "mandatRef": "PM645221"
+                                        },
+                                        {
+                                            "acteurRef": "PA1893",
+                                            "mandatRef": "PM711813"
+                                        },
+                                        {
+                                            "acteurRef": "PA608038",
+                                            "mandatRef": "PM645075"
+                                        },
+                                        {
+                                            "acteurRef": "PA607187",
+                                            "mandatRef": "PM645224"
+                                        },
+                                        {
+                                            "acteurRef": "PA267091",
+                                            "mandatRef": "PM645467"
+                                        },
+                                        {
+                                            "acteurRef": "PA695",
+                                            "mandatRef": "PM645503"
+                                        },
+                                        {
+                                            "acteurRef": "PA334160",
+                                            "mandatRef": "PM703300"
+                                        },
+                                        {
+                                            "acteurRef": "PA267534",
+                                            "mandatRef": "PM645108"
+                                        },
+                                        {
+                                            "acteurRef": "PA590032",
+                                            "mandatRef": "PM703298"
+                                        },
+                                        {
+                                            "acteurRef": "PA508",
+                                            "mandatRef": "PM645397"
+                                        },
+                                        {
+                                            "acteurRef": "PA2895",
+                                            "mandatRef": "PM645485"
+                                        },
+                                        {
+                                            "acteurRef": "PA1496",
+                                            "mandatRef": "PM645273"
+                                        },
+                                        {
+                                            "acteurRef": "PA1579",
+                                            "mandatRef": "PM645117"
+                                        },
+                                        {
+                                            "acteurRef": "PA333285",
+                                            "mandatRef": "PM701029"
+                                        },
+                                        {
+                                            "acteurRef": "PA268039",
+                                            "mandatRef": "PM645239"
+                                        },
+                                        {
+                                            "acteurRef": "PA2317",
+                                            "mandatRef": "PM645111"
+                                        },
+                                        {
+                                            "acteurRef": "PA590034",
+                                            "mandatRef": "PM701035"
+                                        },
+                                        {
+                                            "acteurRef": "PA339",
+                                            "mandatRef": "PM645511"
+                                        },
+                                        {
+                                            "acteurRef": "PA536",
+                                            "mandatRef": "PM645204"
+                                        },
+                                        {
+                                            "acteurRef": "PA560",
+                                            "mandatRef": "PM645337"
+                                        },
+                                        {
+                                            "acteurRef": "PA872",
+                                            "mandatRef": "PM645331"
+                                        },
+                                        {
+                                            "acteurRef": "PA877",
+                                            "mandatRef": "PM645349"
+                                        },
+                                        {
+                                            "acteurRef": "PA1182",
+                                            "mandatRef": "PM645090"
+                                        },
+                                        {
+                                            "acteurRef": "PA1208",
+                                            "mandatRef": "PM645486"
+                                        },
+                                        {
+                                            "acteurRef": "PA1362",
+                                            "mandatRef": "PM645356"
+                                        },
+                                        {
+                                            "acteurRef": "PA1401",
+                                            "mandatRef": "PM645439"
+                                        },
+                                        {
+                                            "acteurRef": "PA1689",
+                                            "mandatRef": "PM645378"
+                                        },
+                                        {
+                                            "acteurRef": "PA1789",
+                                            "mandatRef": "PM645426"
+                                        },
+                                        {
+                                            "acteurRef": "PA1886",
+                                            "mandatRef": "PM645099"
+                                        },
+                                        {
+                                            "acteurRef": "PA1979",
+                                            "mandatRef": "PM645223"
+                                        },
+                                        {
+                                            "acteurRef": "PA2265",
+                                            "mandatRef": "PM645445"
+                                        },
+                                        {
+                                            "acteurRef": "PA2343",
+                                            "mandatRef": "PM645498"
+                                        },
+                                        {
+                                            "acteurRef": "PA2365",
+                                            "mandatRef": "PM645481"
+                                        },
+                                        {
+                                            "acteurRef": "PA2374",
+                                            "mandatRef": "PM645217"
+                                        },
+                                        {
+                                            "acteurRef": "PA2549",
+                                            "mandatRef": "PM645412"
+                                        },
+                                        {
+                                            "acteurRef": "PA2685",
+                                            "mandatRef": "PM645182"
+                                        },
+                                        {
+                                            "acteurRef": "PA2799",
+                                            "mandatRef": "PM645448"
+                                        },
+                                        {
+                                            "acteurRef": "PA332747",
+                                            "mandatRef": "PM645155"
+                                        },
+                                        {
+                                            "acteurRef": "PA606230",
+                                            "mandatRef": "PM645342"
+                                        },
+                                        {
+                                            "acteurRef": "PA1936",
+                                            "mandatRef": "PM645382"
+                                        },
+                                        {
+                                            "acteurRef": "PA606631",
+                                            "mandatRef": "PM645516"
+                                        },
+                                        {
+                                            "acteurRef": "PA608276",
+                                            "mandatRef": "PM645252"
+                                        },
+                                        {
+                                            "acteurRef": "PA606171",
+                                            "mandatRef": "PM645255"
+                                        },
+                                        {
+                                            "acteurRef": "PA608098",
+                                            "mandatRef": "PM645146"
+                                        },
+                                        {
+                                            "acteurRef": "PA331282",
+                                            "mandatRef": "PM645480"
+                                        },
+                                        {
+                                            "acteurRef": "PA605278",
+                                            "mandatRef": "PM645462"
+                                        },
+                                        {
+                                            "acteurRef": "PA606899",
+                                            "mandatRef": "PM645545"
+                                        },
+                                        {
+                                            "acteurRef": "PA1844",
+                                            "mandatRef": "PM645254"
+                                        },
+                                        {
+                                            "acteurRef": "PA606495",
+                                            "mandatRef": "PM645463"
+                                        },
+                                        {
+                                            "acteurRef": "PA770",
+                                            "mandatRef": "PM645361"
+                                        },
+                                        {
+                                            "acteurRef": "PA337568",
+                                            "mandatRef": "PM645287"
+                                        },
+                                        {
+                                            "acteurRef": "PA608083",
+                                            "mandatRef": "PM645142"
+                                        },
+                                        {
+                                            "acteurRef": "PA608158",
+                                            "mandatRef": "PM645174"
+                                        },
+                                        {
+                                            "acteurRef": "PA608686",
+                                            "mandatRef": "PM645601"
+                                        },
+                                        {
+                                            "acteurRef": "PA2503",
+                                            "mandatRef": "PM645187"
+                                        },
+                                        {
+                                            "acteurRef": "PA267188",
+                                            "mandatRef": "PM645410"
+                                        },
+                                        {
+                                            "acteurRef": "PA267695",
+                                            "mandatRef": "PM645213"
+                                        },
+                                        {
+                                            "acteurRef": "PA267835",
+                                            "mandatRef": "PM645134"
+                                        },
+                                        {
+                                            "acteurRef": "PA267965",
+                                            "mandatRef": "PM645052"
+                                        },
+                                        {
+                                            "acteurRef": "PA268042",
+                                            "mandatRef": "PM645241"
+                                        },
+                                        {
+                                            "acteurRef": "PA268048",
+                                            "mandatRef": "PM701033"
+                                        },
+                                        {
+                                            "acteurRef": "PA1592",
+                                            "mandatRef": "PM645232"
+                                        },
+                                        {
+                                            "acteurRef": "PA590031",
+                                            "mandatRef": "PM705598"
+                                        },
+                                        {
+                                            "acteurRef": "PA1193",
+                                            "mandatRef": "PM645344"
+                                        },
+                                        {
+                                            "acteurRef": "PA605069",
+                                            "mandatRef": "PM645534"
+                                        },
+                                        {
+                                            "acteurRef": "PA333335",
+                                            "mandatRef": "PM645370"
+                                        },
+                                        {
+                                            "acteurRef": "PA332364",
+                                            "mandatRef": "PM707194"
+                                        },
+                                        {
+                                            "acteurRef": "PA331807",
+                                            "mandatRef": "PM645367"
+                                        },
+                                        {
+                                            "acteurRef": "PA331835",
+                                            "mandatRef": "PM645380"
+                                        },
+                                        {
+                                            "acteurRef": "PA332384",
+                                            "mandatRef": "PM645528"
+                                        },
+                                        {
+                                            "acteurRef": "PA1032",
+                                            "mandatRef": "PM645488"
+                                        },
+                                        {
+                                            "acteurRef": "PA334116",
+                                            "mandatRef": "PM645114"
+                                        },
+                                        {
+                                            "acteurRef": "PA333818",
+                                            "mandatRef": "PM645451"
+                                        },
+                                        {
+                                            "acteurRef": "PA330118",
+                                            "mandatRef": "PM645540"
+                                        },
+                                        {
+                                            "acteurRef": "PA330130",
+                                            "mandatRef": "PM645541"
+                                        },
+                                        {
+                                            "acteurRef": "PA330357",
+                                            "mandatRef": "PM645453"
+                                        },
+                                        {
+                                            "acteurRef": "PA336971",
+                                            "mandatRef": "PM645102"
+                                        },
+                                        {
+                                            "acteurRef": "PA335054",
+                                            "mandatRef": "PM645614"
+                                        },
+                                        {
+                                            "acteurRef": "PA334951",
+                                            "mandatRef": "PM645594"
+                                        },
+                                        {
+                                            "acteurRef": "PA267923",
+                                            "mandatRef": "PM645120"
+                                        },
+                                        {
+                                            "acteurRef": "PA335532",
+                                            "mandatRef": "PM714818"
+                                        },
+                                        {
+                                            "acteurRef": "PA335543",
+                                            "mandatRef": "PM702197"
+                                        },
+                                        {
+                                            "acteurRef": "PA333043",
+                                            "mandatRef": "PM645303"
+                                        },
+                                        {
+                                            "acteurRef": "PA336112",
+                                            "mandatRef": "PM645253"
+                                        },
+                                        {
+                                            "acteurRef": "PA336421",
+                                            "mandatRef": "PM645332"
+                                        },
+                                        {
+                                            "acteurRef": "PA331924",
+                                            "mandatRef": "PM701034"
+                                        },
+                                        {
+                                            "acteurRef": "PA336439",
+                                            "mandatRef": "PM645333"
+                                        },
+                                        {
+                                            "acteurRef": "PA334755",
+                                            "mandatRef": "PM645580"
+                                        },
+                                        {
+                                            "acteurRef": "PA334768",
+                                            "mandatRef": "PM645582"
+                                        },
+                                        {
+                                            "acteurRef": "PA336015",
+                                            "mandatRef": "PM645222"
+                                        },
+                                        {
+                                            "acteurRef": "PA267233",
+                                            "mandatRef": "PM645115"
+                                        },
+                                        {
+                                            "acteurRef": "PA332015",
+                                            "mandatRef": "PM645414"
+                                        },
+                                        {
+                                            "acteurRef": "PA331990",
+                                            "mandatRef": "PM645449"
+                                        },
+                                        {
+                                            "acteurRef": "PA334811",
+                                            "mandatRef": "PM645587"
+                                        },
+                                        {
+                                            "acteurRef": "PA331014",
+                                            "mandatRef": "PM645422"
+                                        },
+                                        {
+                                            "acteurRef": "PA332843",
+                                            "mandatRef": "PM645220"
+                                        },
+                                        {
+                                            "acteurRef": "PA331753",
+                                            "mandatRef": "PM645348"
+                                        },
+                                        {
+                                            "acteurRef": "PA332305",
+                                            "mandatRef": "PM645562"
+                                        },
+                                        {
+                                            "acteurRef": "PA330546",
+                                            "mandatRef": "PM645492"
+                                        },
+                                        {
+                                            "acteurRef": "PA337483",
+                                            "mandatRef": "PM645265"
+                                        },
+                                        {
+                                            "acteurRef": "PA337504",
+                                            "mandatRef": "PM645271"
+                                        },
+                                        {
+                                            "acteurRef": "PA2430",
+                                            "mandatRef": "PM645411"
+                                        },
+                                        {
+                                            "acteurRef": "PA332614",
+                                            "mandatRef": "PM645110"
+                                        },
+                                        {
+                                            "acteurRef": "PA332636",
+                                            "mandatRef": "PM645118"
+                                        },
+                                        {
+                                            "acteurRef": "PA331658",
+                                            "mandatRef": "PM645277"
+                                        },
+                                        {
+                                            "acteurRef": "PA332206",
+                                            "mandatRef": "PM645538"
+                                        },
+                                        {
+                                            "acteurRef": "PA332796",
+                                            "mandatRef": "PM645193"
+                                        },
+                                        {
+                                            "acteurRef": "PA344114",
+                                            "mandatRef": "PM645092"
+                                        },
+                                        {
+                                            "acteurRef": "PA609332",
+                                            "mandatRef": "PM645147"
+                                        },
+                                        {
+                                            "acteurRef": "PA405480",
+                                            "mandatRef": "PM645203"
+                                        },
+                                        {
+                                            "acteurRef": "PA341339",
+                                            "mandatRef": "PM645496"
+                                        },
+                                        {
+                                            "acteurRef": "PA342415",
+                                            "mandatRef": "PM645532"
+                                        },
+                                        {
+                                            "acteurRef": "PA606351",
+                                            "mandatRef": "PM709053"
+                                        },
+                                        {
+                                            "acteurRef": "PA605076",
+                                            "mandatRef": "PM645535"
+                                        },
+                                        {
+                                            "acteurRef": "PA2693",
+                                            "mandatRef": "PM645419"
+                                        },
+                                        {
+                                            "acteurRef": "PA605131",
+                                            "mandatRef": "PM645420"
+                                        },
+                                        {
+                                            "acteurRef": "PA605143",
+                                            "mandatRef": "PM645423"
+                                        },
+                                        {
+                                            "acteurRef": "PA605518",
+                                            "mandatRef": "PM645500"
+                                        },
+                                        {
+                                            "acteurRef": "PA605557",
+                                            "mandatRef": "PM645507"
+                                        },
+                                        {
+                                            "acteurRef": "PA340432",
+                                            "mandatRef": "PM645471"
+                                        },
+                                        {
+                                            "acteurRef": "PA605349",
+                                            "mandatRef": "PM645483"
+                                        },
+                                        {
+                                            "acteurRef": "PA605426",
+                                            "mandatRef": "PM645517"
+                                        },
+                                        {
+                                            "acteurRef": "PA605703",
+                                            "mandatRef": "PM645418"
+                                        },
+                                        {
+                                            "acteurRef": "PA605830",
+                                            "mandatRef": "PM645454"
+                                        },
+                                        {
+                                            "acteurRef": "PA1963",
+                                            "mandatRef": "PM645466"
+                                        },
+                                        {
+                                            "acteurRef": "PA341246",
+                                            "mandatRef": "PM645469"
+                                        },
+                                        {
+                                            "acteurRef": "PA605888",
+                                            "mandatRef": "PM645476"
+                                        },
+                                        {
+                                            "acteurRef": "PA605643",
+                                            "mandatRef": "PM645405"
+                                        },
+                                        {
+                                            "acteurRef": "PA606258",
+                                            "mandatRef": "PM645347"
+                                        },
+                                        {
+                                            "acteurRef": "PA605963",
+                                            "mandatRef": "PM645055"
+                                        },
+                                        {
+                                            "acteurRef": "PA606030",
+                                            "mandatRef": "PM645123"
+                                        },
+                                        {
+                                            "acteurRef": "PA606149",
+                                            "mandatRef": "PM645218"
+                                        },
+                                        {
+                                            "acteurRef": "PA606161",
+                                            "mandatRef": "PM645250"
+                                        },
+                                        {
+                                            "acteurRef": "PA606412",
+                                            "mandatRef": "PM645400"
+                                        },
+                                        {
+                                            "acteurRef": "PA606555",
+                                            "mandatRef": "PM645477"
+                                        },
+                                        {
+                                            "acteurRef": "PA606573",
+                                            "mandatRef": "PM645484"
+                                        },
+                                        {
+                                            "acteurRef": "PA341981",
+                                            "mandatRef": "PM645444"
+                                        },
+                                        {
+                                            "acteurRef": "PA606507",
+                                            "mandatRef": "PM645406"
+                                        },
+                                        {
+                                            "acteurRef": "PA606363",
+                                            "mandatRef": "PM645388"
+                                        },
+                                        {
+                                            "acteurRef": "PA606924",
+                                            "mandatRef": "PM645527"
+                                        },
+                                        {
+                                            "acteurRef": "PA606623",
+                                            "mandatRef": "PM645513"
+                                        },
+                                        {
+                                            "acteurRef": "PA606639",
+                                            "mandatRef": "PM645521"
+                                        },
+                                        {
+                                            "acteurRef": "PA606665",
+                                            "mandatRef": "PM645526"
+                                        },
+                                        {
+                                            "acteurRef": "PA267706",
+                                            "mandatRef": "PM645529"
+                                        },
+                                        {
+                                            "acteurRef": "PA606675",
+                                            "mandatRef": "PM645533"
+                                        },
+                                        {
+                                            "acteurRef": "PA606745",
+                                            "mandatRef": "PM645560"
+                                        },
+                                        {
+                                            "acteurRef": "PA607256",
+                                            "mandatRef": "PM645247"
+                                        },
+                                        {
+                                            "acteurRef": "PA607283",
+                                            "mandatRef": "PM645259"
+                                        },
+                                        {
+                                            "acteurRef": "PA607155",
+                                            "mandatRef": "PM645200"
+                                        },
+                                        {
+                                            "acteurRef": "PA607193",
+                                            "mandatRef": "PM645179"
+                                        },
+                                        {
+                                            "acteurRef": "PA607595",
+                                            "mandatRef": "PM645377"
+                                        },
+                                        {
+                                            "acteurRef": "PA607606",
+                                            "mandatRef": "PM645381"
+                                        },
+                                        {
+                                            "acteurRef": "PA607619",
+                                            "mandatRef": "PM645383"
+                                        },
+                                        {
+                                            "acteurRef": "PA607395",
+                                            "mandatRef": "PM645343"
+                                        },
+                                        {
+                                            "acteurRef": "PA607509",
+                                            "mandatRef": "PM645369"
+                                        },
+                                        {
+                                            "acteurRef": "PA607553",
+                                            "mandatRef": "PM645373"
+                                        },
+                                        {
+                                            "acteurRef": "PA607892",
+                                            "mandatRef": "PM645460"
+                                        },
+                                        {
+                                            "acteurRef": "PA607919",
+                                            "mandatRef": "PM645478"
+                                        },
+                                        {
+                                            "acteurRef": "PA607691",
+                                            "mandatRef": "PM645401"
+                                        },
+                                        {
+                                            "acteurRef": "PA607699",
+                                            "mandatRef": "PM645403"
+                                        },
+                                        {
+                                            "acteurRef": "PA607761",
+                                            "mandatRef": "PM645482"
+                                        },
+                                        {
+                                            "acteurRef": "PA607769",
+                                            "mandatRef": "PM645494"
+                                        },
+                                        {
+                                            "acteurRef": "PA608348",
+                                            "mandatRef": "PM645322"
+                                        },
+                                        {
+                                            "acteurRef": "PA608172",
+                                            "mandatRef": "PM645197"
+                                        },
+                                        {
+                                            "acteurRef": "PA608641",
+                                            "mandatRef": "PM645579"
+                                        },
+                                        {
+                                            "acteurRef": "PA608684",
+                                            "mandatRef": "PM645599"
+                                        },
+                                        {
+                                            "acteurRef": "PA608695",
+                                            "mandatRef": "PM645605"
+                                        },
+                                        {
+                                            "acteurRef": "PA608718",
+                                            "mandatRef": "PM645610"
+                                        },
+                                        {
+                                            "acteurRef": "PA608778",
+                                            "mandatRef": "PM645565"
+                                        },
+                                        {
+                                            "acteurRef": "PA608785",
+                                            "mandatRef": "PM645567"
+                                        },
+                                        {
+                                            "acteurRef": "PA608920",
+                                            "mandatRef": "PM645060"
+                                        },
+                                        {
+                                            "acteurRef": "PA609205",
+                                            "mandatRef": "PM645128"
+                                        },
+                                        {
+                                            "acteurRef": "PA609292",
+                                            "mandatRef": "PM645169"
+                                        },
+                                        {
+                                            "acteurRef": "PA609743",
+                                            "mandatRef": "PM645321"
+                                        },
+                                        {
+                                            "acteurRef": "PA609775",
+                                            "mandatRef": "PM645329"
+                                        },
+                                        {
+                                            "acteurRef": "PA609435",
+                                            "mandatRef": "PM645211"
+                                        },
+                                        {
+                                            "acteurRef": "PA609578",
+                                            "mandatRef": "PM645256"
+                                        },
+                                        {
+                                            "acteurRef": "PA609590",
+                                            "mandatRef": "PM645261"
+                                        },
+                                        {
+                                            "acteurRef": "PA609691",
+                                            "mandatRef": "PM645296"
+                                        },
+                                        {
+                                            "acteurRef": "PA610045",
+                                            "mandatRef": "PM645041"
+                                        },
+                                        {
+                                            "acteurRef": "PA610066",
+                                            "mandatRef": "PM645059"
+                                        },
+                                        {
+                                            "acteurRef": "PA609983",
+                                            "mandatRef": "PM645048"
+                                        },
+                                        {
+                                            "acteurRef": "PA609816",
+                                            "mandatRef": "PM645334"
+                                        },
+                                        {
+                                            "acteurRef": "PA609845",
+                                            "mandatRef": "PM645339"
+                                        },
+                                        {
+                                            "acteurRef": "PA672",
+                                            "mandatRef": "PM645175"
+                                        },
+                                        {
+                                            "acteurRef": "PA610195",
+                                            "mandatRef": "PM645063"
+                                        },
+                                        {
+                                            "acteurRef": "PA610245",
+                                            "mandatRef": "PM645109"
+                                        },
+                                        {
+                                            "acteurRef": "PA610291",
+                                            "mandatRef": "PM645119"
+                                        },
+                                        {
+                                            "acteurRef": "PA610313",
+                                            "mandatRef": "PM645122"
+                                        },
+                                        {
+                                            "acteurRef": "PA610354",
+                                            "mandatRef": "PM645106"
+                                        },
+                                        {
+                                            "acteurRef": "PA608363",
+                                            "mandatRef": "PM645571"
+                                        },
+                                        {
+                                            "acteurRef": "PA344242",
+                                            "mandatRef": "PM645170"
+                                        },
+                                        {
+                                            "acteurRef": "PA609314",
+                                            "mandatRef": "PM645145"
+                                        },
+                                        {
+                                            "acteurRef": "PA610752",
+                                            "mandatRef": "PM645299"
+                                        },
+                                        {
+                                            "acteurRef": "PA609535",
+                                            "mandatRef": "PM645236"
+                                        },
+                                        {
+                                            "acteurRef": "PA610075",
+                                            "mandatRef": "PM645068"
+                                        },
+                                        {
+                                            "acteurRef": "PA610529",
+                                            "mandatRef": "PM645192"
+                                        },
+                                        {
+                                            "acteurRef": "PA610594",
+                                            "mandatRef": "PM645185"
+                                        },
+                                        {
+                                            "acteurRef": "PA610203",
+                                            "mandatRef": "PM645065"
+                                        },
+                                        {
+                                            "acteurRef": "PA610701",
+                                            "mandatRef": "PM645281"
+                                        },
+                                        {
+                                            "acteurRef": "PA610729",
+                                            "mandatRef": "PM645288"
+                                        },
+                                        {
+                                            "acteurRef": "PA609963",
+                                            "mandatRef": "PM645045"
+                                        },
+                                        {
+                                            "acteurRef": "PA610758",
+                                            "mandatRef": "PM645301"
+                                        },
+                                        {
+                                            "acteurRef": "PA608011",
+                                            "mandatRef": "PM645066"
+                                        },
+                                        {
+                                            "acteurRef": "PA608264",
+                                            "mandatRef": "PM645248"
+                                        },
+                                        {
+                                            "acteurRef": "PA610539",
+                                            "mandatRef": "PM645194"
+                                        },
+                                        {
+                                            "acteurRef": "PA610905",
+                                            "mandatRef": "PM645225"
+                                        },
+                                        {
+                                            "acteurRef": "PA610936",
+                                            "mandatRef": "PM645230"
+                                        },
+                                        {
+                                            "acteurRef": "PA642836",
+                                            "mandatRef": "PM676799"
+                                        },
+                                        {
+                                            "acteurRef": "PA642987",
+                                            "mandatRef": "PM676803"
+                                        },
+                                        {
+                                            "acteurRef": "PA608741",
+                                            "mandatRef": "PM676810"
+                                        },
+                                        {
+                                            "acteurRef": "PA642724",
+                                            "mandatRef": "PM706232"
+                                        },
+                                        {
+                                            "acteurRef": "PA342332",
+                                            "mandatRef": "PM676816"
+                                        },
+                                        {
+                                            "acteurRef": "PA267623",
+                                            "mandatRef": "PM676817"
+                                        },
+                                        {
+                                            "acteurRef": "PA693008",
+                                            "mandatRef": "PM693014"
+                                        },
+                                        {
+                                            "acteurRef": "PA335999",
+                                            "mandatRef": "PM696536"
+                                        },
+                                        {
+                                            "acteurRef": "PA643069",
+                                            "mandatRef": "PM701218"
+                                        },
+                                        {
+                                            "acteurRef": "PA343408",
+                                            "mandatRef": "PM701217"
+                                        },
+                                        {
+                                            "acteurRef": "PA643205",
+                                            "mandatRef": "PM701215"
+                                        },
+                                        {
+                                            "acteurRef": "PA643020",
+                                            "mandatRef": "PM702199"
+                                        },
+                                        {
+                                            "acteurRef": "PA643002",
+                                            "mandatRef": "PM703297"
+                                        },
+                                        {
+                                            "acteurRef": "PA642805",
+                                            "mandatRef": "PM703478"
+                                        },
+                                        {
+                                            "acteurRef": "PA642705",
+                                            "mandatRef": "PM709054"
+                                        },
+                                        {
+                                            "acteurRef": "PA643177",
+                                            "mandatRef": "PM709055"
+                                        },
+                                        {
+                                            "acteurRef": "PA642790",
+                                            "mandatRef": "PM709217"
+                                        },
+                                        {
+                                            "acteurRef": "PA642962",
+                                            "mandatRef": "PM709226"
+                                        },
+                                        {
+                                            "acteurRef": "PA642736",
+                                            "mandatRef": "PM711657"
+                                        },
+                                        {
+                                            "acteurRef": "PA642699",
+                                            "mandatRef": "PM711712"
+                                        },
+                                        {
+                                            "acteurRef": "PA643157",
+                                            "mandatRef": "PM711808"
+                                        },
+                                        {
+                                            "acteurRef": "PA642965",
+                                            "mandatRef": "PM711810"
+                                        },
+                                        {
+                                            "acteurRef": "PA643165",
+                                            "mandatRef": "PM711811"
+                                        },
+                                        {
+                                            "acteurRef": "PA643196",
+                                            "mandatRef": "PM711809"
+                                        },
+                                        {
+                                            "acteurRef": "PA712422",
+                                            "mandatRef": "PM712424"
+                                        },
+                                        {
+                                            "acteurRef": "PA344545",
+                                            "mandatRef": "PM713452"
+                                        }
+                                    ]
+                                }
+                            },
+                            "decompteVoix": {
+                                "abstention": "6",
+                                "contre": "0",
+                                "nonVotant": "1",
+                                "pour": "256"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "199",
+                        "organeRef": "PO707869",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA346",
+                                            "mandatRef": "PM645086"
+                                        },
+                                        {
+                                            "acteurRef": "PA951",
+                                            "mandatRef": "PM645280"
+                                        },
+                                        {
+                                            "acteurRef": "PA998",
+                                            "mandatRef": "PM645034"
+                                        },
+                                        {
+                                            "acteurRef": "PA1020",
+                                            "mandatRef": "PM645057"
+                                        },
+                                        {
+                                            "acteurRef": "PA1124",
+                                            "mandatRef": "PM687215"
+                                        },
+                                        {
+                                            "acteurRef": "PA1310",
+                                            "mandatRef": "PM645047"
+                                        },
+                                        {
+                                            "acteurRef": "PA1699",
+                                            "mandatRef": "PM645390"
+                                        },
+                                        {
+                                            "acteurRef": "PA1761",
+                                            "mandatRef": "PM645501"
+                                        },
+                                        {
+                                            "acteurRef": "PA1954",
+                                            "mandatRef": "PM645195"
+                                        },
+                                        {
+                                            "acteurRef": "PA2048",
+                                            "mandatRef": "PM693013"
+                                        },
+                                        {
+                                            "acteurRef": "PA2084",
+                                            "mandatRef": "PM645407"
+                                        },
+                                        {
+                                            "acteurRef": "PA2191",
+                                            "mandatRef": "PM645141"
+                                        },
+                                        {
+                                            "acteurRef": "PA2250",
+                                            "mandatRef": "PM645539"
+                                        },
+                                        {
+                                            "acteurRef": "PA2295",
+                                            "mandatRef": "PM645091"
+                                        },
+                                        {
+                                            "acteurRef": "PA2529",
+                                            "mandatRef": "PM645608"
+                                        },
+                                        {
+                                            "acteurRef": "PA2796",
+                                            "mandatRef": "PM645520"
+                                        },
+                                        {
+                                            "acteurRef": "PA2801",
+                                            "mandatRef": "PM645576"
+                                        },
+                                        {
+                                            "acteurRef": "PA2936",
+                                            "mandatRef": "PM645272"
+                                        },
+                                        {
+                                            "acteurRef": "PA696",
+                                            "mandatRef": "PM645428"
+                                        },
+                                        {
+                                            "acteurRef": "PA1001",
+                                            "mandatRef": "PM645499"
+                                        },
+                                        {
+                                            "acteurRef": "PA2377",
+                                            "mandatRef": "PM645591"
+                                        },
+                                        {
+                                            "acteurRef": "PA267689",
+                                            "mandatRef": "PM645295"
+                                        },
+                                        {
+                                            "acteurRef": "PA333134",
+                                            "mandatRef": "PM645341"
+                                        },
+                                        {
+                                            "acteurRef": "PA267499",
+                                            "mandatRef": "PM645572"
+                                        },
+                                        {
+                                            "acteurRef": "PA606712",
+                                            "mandatRef": "PM645549"
+                                        },
+                                        {
+                                            "acteurRef": "PA330240",
+                                            "mandatRef": "PM645425"
+                                        },
+                                        {
+                                            "acteurRef": "PA230",
+                                            "mandatRef": "PM645553"
+                                        },
+                                        {
+                                            "acteurRef": "PA856",
+                                            "mandatRef": "PM645353"
+                                        },
+                                        {
+                                            "acteurRef": "PA923",
+                                            "mandatRef": "PM645363"
+                                        },
+                                        {
+                                            "acteurRef": "PA1031",
+                                            "mandatRef": "PM645044"
+                                        },
+                                        {
+                                            "acteurRef": "PA1466",
+                                            "mandatRef": "PM645240"
+                                        },
+                                        {
+                                            "acteurRef": "PA1585",
+                                            "mandatRef": "PM645094"
+                                        },
+                                        {
+                                            "acteurRef": "PA1661",
+                                            "mandatRef": "PM645181"
+                                        },
+                                        {
+                                            "acteurRef": "PA1778",
+                                            "mandatRef": "PM645093"
+                                        },
+                                        {
+                                            "acteurRef": "PA1857",
+                                            "mandatRef": "PM645505"
+                                        },
+                                        {
+                                            "acteurRef": "PA1874",
+                                            "mandatRef": "PM645474"
+                                        },
+                                        {
+                                            "acteurRef": "PA1931",
+                                            "mandatRef": "PM645042"
+                                        },
+                                        {
+                                            "acteurRef": "PA2073",
+                                            "mandatRef": "PM645207"
+                                        },
+                                        {
+                                            "acteurRef": "PA2083",
+                                            "mandatRef": "PM645105"
+                                        },
+                                        {
+                                            "acteurRef": "PA2089",
+                                            "mandatRef": "PM645037"
+                                        },
+                                        {
+                                            "acteurRef": "PA2098",
+                                            "mandatRef": "PM645351"
+                                        },
+                                        {
+                                            "acteurRef": "PA2099",
+                                            "mandatRef": "PM645101"
+                                        },
+                                        {
+                                            "acteurRef": "PA2257",
+                                            "mandatRef": "PM645201"
+                                        },
+                                        {
+                                            "acteurRef": "PA2277",
+                                            "mandatRef": "PM645135"
+                                        },
+                                        {
+                                            "acteurRef": "PA2345",
+                                            "mandatRef": "PM645548"
+                                        },
+                                        {
+                                            "acteurRef": "PA2775",
+                                            "mandatRef": "PM645461"
+                                        },
+                                        {
+                                            "acteurRef": "PA2876",
+                                            "mandatRef": "PM645355"
+                                        },
+                                        {
+                                            "acteurRef": "PA609365",
+                                            "mandatRef": "PM645191"
+                                        },
+                                        {
+                                            "acteurRef": "PA1152",
+                                            "mandatRef": "PM645561"
+                                        },
+                                        {
+                                            "acteurRef": "PA1521",
+                                            "mandatRef": "PM645078"
+                                        },
+                                        {
+                                            "acteurRef": "PA1498",
+                                            "mandatRef": "PM645080"
+                                        },
+                                        {
+                                            "acteurRef": "PA746",
+                                            "mandatRef": "PM645154"
+                                        },
+                                        {
+                                            "acteurRef": "PA1445",
+                                            "mandatRef": "PM645563"
+                                        },
+                                        {
+                                            "acteurRef": "PA606693",
+                                            "mandatRef": "PM645542"
+                                        },
+                                        {
+                                            "acteurRef": "PA333224",
+                                            "mandatRef": "PM645354"
+                                        },
+                                        {
+                                            "acteurRef": "PA1695",
+                                            "mandatRef": "PM645157"
+                                        },
+                                        {
+                                            "acteurRef": "PA2155",
+                                            "mandatRef": "PM705467"
+                                        },
+                                        {
+                                            "acteurRef": "PA917",
+                                            "mandatRef": "PM645163"
+                                        },
+                                        {
+                                            "acteurRef": "PA267797",
+                                            "mandatRef": "PM645350"
+                                        },
+                                        {
+                                            "acteurRef": "PA2952",
+                                            "mandatRef": "PM645464"
+                                        },
+                                        {
+                                            "acteurRef": "PA2086",
+                                            "mandatRef": "PM645043"
+                                        },
+                                        {
+                                            "acteurRef": "PA606098",
+                                            "mandatRef": "PM645171"
+                                        },
+                                        {
+                                            "acteurRef": "PA345937",
+                                            "mandatRef": "PM645177"
+                                        },
+                                        {
+                                            "acteurRef": "PA1379",
+                                            "mandatRef": "PM645433"
+                                        },
+                                        {
+                                            "acteurRef": "PA1483",
+                                            "mandatRef": "PM645274"
+                                        },
+                                        {
+                                            "acteurRef": "PA1574",
+                                            "mandatRef": "PM645430"
+                                        },
+                                        {
+                                            "acteurRef": "PA1630",
+                                            "mandatRef": "PM645176"
+                                        },
+                                        {
+                                            "acteurRef": "PA1770",
+                                            "mandatRef": "PM645069"
+                                        },
+                                        {
+                                            "acteurRef": "PA1946",
+                                            "mandatRef": "PM645437"
+                                        },
+                                        {
+                                            "acteurRef": "PA2011",
+                                            "mandatRef": "PM645434"
+                                        },
+                                        {
+                                            "acteurRef": "PA2492",
+                                            "mandatRef": "PM645431"
+                                        },
+                                        {
+                                            "acteurRef": "PA2707",
+                                            "mandatRef": "PM645575"
+                                        },
+                                        {
+                                            "acteurRef": "PA346876",
+                                            "mandatRef": "PM645097"
+                                        },
+                                        {
+                                            "acteurRef": "PA2971",
+                                            "mandatRef": "PM645392"
+                                        },
+                                        {
+                                            "acteurRef": "PA266788",
+                                            "mandatRef": "PM645294"
+                                        },
+                                        {
+                                            "acteurRef": "PA2229",
+                                            "mandatRef": "PM645205"
+                                        },
+                                        {
+                                            "acteurRef": "PA1029",
+                                            "mandatRef": "PM645524"
+                                        },
+                                        {
+                                            "acteurRef": "PA334843",
+                                            "mandatRef": "PM645589"
+                                        },
+                                        {
+                                            "acteurRef": "PA223837",
+                                            "mandatRef": "PM645440"
+                                        },
+                                        {
+                                            "acteurRef": "PA345619",
+                                            "mandatRef": "PM645124"
+                                        },
+                                        {
+                                            "acteurRef": "PA2815",
+                                            "mandatRef": "PM645514"
+                                        },
+                                        {
+                                            "acteurRef": "PA267013",
+                                            "mandatRef": "PM645613"
+                                        },
+                                        {
+                                            "acteurRef": "PA267057",
+                                            "mandatRef": "PM645399"
+                                        },
+                                        {
+                                            "acteurRef": "PA267148",
+                                            "mandatRef": "PM645161"
+                                        },
+                                        {
+                                            "acteurRef": "PA267151",
+                                            "mandatRef": "PM645165"
+                                        },
+                                        {
+                                            "acteurRef": "PA267165",
+                                            "mandatRef": "PM645360"
+                                        },
+                                        {
+                                            "acteurRef": "PA267200",
+                                            "mandatRef": "PM645502"
+                                        },
+                                        {
+                                            "acteurRef": "PA267204",
+                                            "mandatRef": "PM645551"
+                                        },
+                                        {
+                                            "acteurRef": "PA267227",
+                                            "mandatRef": "PM645618"
+                                        },
+                                        {
+                                            "acteurRef": "PA267246",
+                                            "mandatRef": "PM645340"
+                                        },
+                                        {
+                                            "acteurRef": "PA267260",
+                                            "mandatRef": "PM645459"
+                                        },
+                                        {
+                                            "acteurRef": "PA267266",
+                                            "mandatRef": "PM645489"
+                                        },
+                                        {
+                                            "acteurRef": "PA267289",
+                                            "mandatRef": "PM645242"
+                                        },
+                                        {
+                                            "acteurRef": "PA267317",
+                                            "mandatRef": "PM645623"
+                                        },
+                                        {
+                                            "acteurRef": "PA267327",
+                                            "mandatRef": "PM645031"
+                                        },
+                                        {
+                                            "acteurRef": "PA267355",
+                                            "mandatRef": "PM645581"
+                                        },
+                                        {
+                                            "acteurRef": "PA267358",
+                                            "mandatRef": "PM645602"
+                                        },
+                                        {
+                                            "acteurRef": "PA267378",
+                                            "mandatRef": "PM645266"
+                                        },
+                                        {
+                                            "acteurRef": "PA267429",
+                                            "mandatRef": "PM645130"
+                                        },
+                                        {
+                                            "acteurRef": "PA267459",
+                                            "mandatRef": "PM645564"
+                                        },
+                                        {
+                                            "acteurRef": "PA267506",
+                                            "mandatRef": "PM645270"
+                                        },
+                                        {
+                                            "acteurRef": "PA267527",
+                                            "mandatRef": "PM645555"
+                                        },
+                                        {
+                                            "acteurRef": "PA267556",
+                                            "mandatRef": "PM645396"
+                                        },
+                                        {
+                                            "acteurRef": "PA267576",
+                                            "mandatRef": "PM645073"
+                                        },
+                                        {
+                                            "acteurRef": "PA267591",
+                                            "mandatRef": "PM645573"
+                                        },
+                                        {
+                                            "acteurRef": "PA267598",
+                                            "mandatRef": "PM645286"
+                                        },
+                                        {
+                                            "acteurRef": "PA267728",
+                                            "mandatRef": "PM645216"
+                                        },
+                                        {
+                                            "acteurRef": "PA267743",
+                                            "mandatRef": "PM645058"
+                                        },
+                                        {
+                                            "acteurRef": "PA267762",
+                                            "mandatRef": "PM645455"
+                                        },
+                                        {
+                                            "acteurRef": "PA267775",
+                                            "mandatRef": "PM645585"
+                                        },
+                                        {
+                                            "acteurRef": "PA267794",
+                                            "mandatRef": "PM645442"
+                                        },
+                                        {
+                                            "acteurRef": "PA267813",
+                                            "mandatRef": "PM645172"
+                                        },
+                                        {
+                                            "acteurRef": "PA267822",
+                                            "mandatRef": "PM645151"
+                                        },
+                                        {
+                                            "acteurRef": "PA267886",
+                                            "mandatRef": "PM645188"
+                                        },
+                                        {
+                                            "acteurRef": "PA267895",
+                                            "mandatRef": "PM645199"
+                                        },
+                                        {
+                                            "acteurRef": "PA1477",
+                                            "mandatRef": "PM645282"
+                                        },
+                                        {
+                                            "acteurRef": "PA268051",
+                                            "mandatRef": "PM645234"
+                                        },
+                                        {
+                                            "acteurRef": "PA2124",
+                                            "mandatRef": "PM645475"
+                                        },
+                                        {
+                                            "acteurRef": "PA2700",
+                                            "mandatRef": "PM645196"
+                                        },
+                                        {
+                                            "acteurRef": "PA2792",
+                                            "mandatRef": "PM645308"
+                                        },
+                                        {
+                                            "acteurRef": "PA2907",
+                                            "mandatRef": "PM645289"
+                                        },
+                                        {
+                                            "acteurRef": "PA2960",
+                                            "mandatRef": "PM645040"
+                                        },
+                                        {
+                                            "acteurRef": "PA266776",
+                                            "mandatRef": "PM645590"
+                                        },
+                                        {
+                                            "acteurRef": "PA267628",
+                                            "mandatRef": "PM645046"
+                                        },
+                                        {
+                                            "acteurRef": "PA608826",
+                                            "mandatRef": "PM645556"
+                                        },
+                                        {
+                                            "acteurRef": "PA267532",
+                                            "mandatRef": "PM645558"
+                                        },
+                                        {
+                                            "acteurRef": "PA267285",
+                                            "mandatRef": "PM645140"
+                                        },
+                                        {
+                                            "acteurRef": "PA267680",
+                                            "mandatRef": "PM645427"
+                                        },
+                                        {
+                                            "acteurRef": "PA605036",
+                                            "mandatRef": "PM645278"
+                                        },
+                                        {
+                                            "acteurRef": "PA1459",
+                                            "mandatRef": "PM645518"
+                                        },
+                                        {
+                                            "acteurRef": "PA1012",
+                                            "mandatRef": "PM645168"
+                                        },
+                                        {
+                                            "acteurRef": "PA267551",
+                                            "mandatRef": "PM645372"
+                                        },
+                                        {
+                                            "acteurRef": "PA332886",
+                                            "mandatRef": "PM645226"
+                                        },
+                                        {
+                                            "acteurRef": "PA334149",
+                                            "mandatRef": "PM645127"
+                                        },
+                                        {
+                                            "acteurRef": "PA267178",
+                                            "mandatRef": "PM645473"
+                                        },
+                                        {
+                                            "acteurRef": "PA335159",
+                                            "mandatRef": "PM645554"
+                                        },
+                                        {
+                                            "acteurRef": "PA336316",
+                                            "mandatRef": "PM645298"
+                                        },
+                                        {
+                                            "acteurRef": "PA335758",
+                                            "mandatRef": "PM645160"
+                                        },
+                                        {
+                                            "acteurRef": "PA243",
+                                            "mandatRef": "PM645167"
+                                        },
+                                        {
+                                            "acteurRef": "PA334654",
+                                            "mandatRef": "PM645596"
+                                        },
+                                        {
+                                            "acteurRef": "PA330008",
+                                            "mandatRef": "PM645164"
+                                        },
+                                        {
+                                            "acteurRef": "PA336576",
+                                            "mandatRef": "PM645364"
+                                        },
+                                        {
+                                            "acteurRef": "PA230329",
+                                            "mandatRef": "PM645079"
+                                        },
+                                        {
+                                            "acteurRef": "PA266797",
+                                            "mandatRef": "PM645338"
+                                        },
+                                        {
+                                            "acteurRef": "PA335567",
+                                            "mandatRef": "PM645104"
+                                        },
+                                        {
+                                            "acteurRef": "PA332523",
+                                            "mandatRef": "PM645550"
+                                        },
+                                        {
+                                            "acteurRef": "PA334906",
+                                            "mandatRef": "PM645577"
+                                        },
+                                        {
+                                            "acteurRef": "PA331481",
+                                            "mandatRef": "PM645136"
+                                        },
+                                        {
+                                            "acteurRef": "PA331567",
+                                            "mandatRef": "PM645186"
+                                        },
+                                        {
+                                            "acteurRef": "PA267450",
+                                            "mandatRef": "PM645452"
+                                        },
+                                        {
+                                            "acteurRef": "PA330684",
+                                            "mandatRef": "PM645497"
+                                        },
+                                        {
+                                            "acteurRef": "PA330788",
+                                            "mandatRef": "PM645510"
+                                        },
+                                        {
+                                            "acteurRef": "PA331146",
+                                            "mandatRef": "PM645306"
+                                        },
+                                        {
+                                            "acteurRef": "PA342935",
+                                            "mandatRef": "PM645244"
+                                        },
+                                        {
+                                            "acteurRef": "PA417099",
+                                            "mandatRef": "PM645346"
+                                        },
+                                        {
+                                            "acteurRef": "PA605991",
+                                            "mandatRef": "PM645081"
+                                        },
+                                        {
+                                            "acteurRef": "PA422119",
+                                            "mandatRef": "PM645183"
+                                        },
+                                        {
+                                            "acteurRef": "PA2664",
+                                            "mandatRef": "PM645139"
+                                        },
+                                        {
+                                            "acteurRef": "PA266774",
+                                            "mandatRef": "PM645583"
+                                        },
+                                        {
+                                            "acteurRef": "PA606478",
+                                            "mandatRef": "PM645457"
+                                        },
+                                        {
+                                            "acteurRef": "PA606888",
+                                            "mandatRef": "PM645543"
+                                        },
+                                        {
+                                            "acteurRef": "PA267735",
+                                            "mandatRef": "PM645237"
+                                        },
+                                        {
+                                            "acteurRef": "PA607090",
+                                            "mandatRef": "PM645143"
+                                        },
+                                        {
+                                            "acteurRef": "PA607603",
+                                            "mandatRef": "PM645379"
+                                        },
+                                        {
+                                            "acteurRef": "PA608016",
+                                            "mandatRef": "PM645071"
+                                        },
+                                        {
+                                            "acteurRef": "PA608662",
+                                            "mandatRef": "PM645592"
+                                        },
+                                        {
+                                            "acteurRef": "PA344776",
+                                            "mandatRef": "PM645584"
+                                        },
+                                        {
+                                            "acteurRef": "PA608416",
+                                            "mandatRef": "PM645586"
+                                        },
+                                        {
+                                            "acteurRef": "PA608434",
+                                            "mandatRef": "PM645593"
+                                        },
+                                        {
+                                            "acteurRef": "PA608851",
+                                            "mandatRef": "PM645559"
+                                        },
+                                        {
+                                            "acteurRef": "PA609345",
+                                            "mandatRef": "PM645173"
+                                        },
+                                        {
+                                            "acteurRef": "PA609245",
+                                            "mandatRef": "PM645150"
+                                        },
+                                        {
+                                            "acteurRef": "PA609740",
+                                            "mandatRef": "PM645319"
+                                        },
+                                        {
+                                            "acteurRef": "PA609764",
+                                            "mandatRef": "PM645323"
+                                        },
+                                        {
+                                            "acteurRef": "PA609442",
+                                            "mandatRef": "PM645214"
+                                        },
+                                        {
+                                            "acteurRef": "PA314",
+                                            "mandatRef": "PM645292"
+                                        },
+                                        {
+                                            "acteurRef": "PA267785",
+                                            "mandatRef": "PM645359"
+                                        },
+                                        {
+                                            "acteurRef": "PA605782",
+                                            "mandatRef": "PM645291"
+                                        },
+                                        {
+                                            "acteurRef": "PA609726",
+                                            "mandatRef": "PM645311"
+                                        },
+                                        {
+                                            "acteurRef": "PA607489",
+                                            "mandatRef": "PM645366"
+                                        },
+                                        {
+                                            "acteurRef": "PA608380",
+                                            "mandatRef": "PM645578"
+                                        },
+                                        {
+                                            "acteurRef": "PA610804",
+                                            "mandatRef": "PM645313"
+                                        },
+                                        {
+                                            "acteurRef": "PA610830",
+                                            "mandatRef": "PM645039"
+                                        },
+                                        {
+                                            "acteurRef": "PA610924",
+                                            "mandatRef": "PM645227"
+                                        },
+                                        {
+                                            "acteurRef": "PA267457",
+                                            "mandatRef": "PM687216"
+                                        },
+                                        {
+                                            "acteurRef": "PA687214",
+                                            "mandatRef": "PM687217"
+                                        },
+                                        {
+                                            "acteurRef": "PA346886",
+                                            "mandatRef": "PM695110"
+                                        },
+                                        {
+                                            "acteurRef": "PA695511",
+                                            "mandatRef": "PM695513"
+                                        },
+                                        {
+                                            "acteurRef": "PA642759",
+                                            "mandatRef": "PM701660"
+                                        },
+                                        {
+                                            "acteurRef": "PA709315",
+                                            "mandatRef": "PM709318"
+                                        },
+                                        {
+                                            "acteurRef": "PA712015",
+                                            "mandatRef": "PM712024"
+                                        },
+                                        {
+                                            "acteurRef": "PA712014",
+                                            "mandatRef": "PM712023"
+                                        },
+                                        {
+                                            "acteurRef": "PA712016",
+                                            "mandatRef": "PM712025"
+                                        },
+                                        {
+                                            "acteurRef": "PA713448",
+                                            "mandatRef": "PM713451"
+                                        },
+                                        {
+                                            "acteurRef": "PA643183",
+                                            "mandatRef": "PM713680"
+                                        }
+                                    ]
+                                },
+                                "nonVotants": "0",
+                                "pours": null
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "195",
+                                "pour": "0"
+                            },
+                            "positionMajoritaire": "contre"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "27",
+                        "organeRef": "PO656010",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA2597",
+                                            "mandatRef": "PM645126"
+                                        },
+                                        {
+                                            "acteurRef": "PA2667",
+                                            "mandatRef": "PM645429"
+                                        },
+                                        {
+                                            "acteurRef": "PA2675",
+                                            "mandatRef": "PM645061"
+                                        },
+                                        {
+                                            "acteurRef": "PA267042",
+                                            "mandatRef": "PM645368"
+                                        },
+                                        {
+                                            "acteurRef": "PA268019",
+                                            "mandatRef": "PM645116"
+                                        },
+                                        {
+                                            "acteurRef": "PA942",
+                                            "mandatRef": "PM645357"
+                                        },
+                                        {
+                                            "acteurRef": "PA345897",
+                                            "mandatRef": "PM645209"
+                                        },
+                                        {
+                                            "acteurRef": "PA1960",
+                                            "mandatRef": "PM645107"
+                                        },
+                                        {
+                                            "acteurRef": "PA216574",
+                                            "mandatRef": "PM645629"
+                                        },
+                                        {
+                                            "acteurRef": "PA267241",
+                                            "mandatRef": "PM645246"
+                                        },
+                                        {
+                                            "acteurRef": "PA267330",
+                                            "mandatRef": "PM645032"
+                                        },
+                                        {
+                                            "acteurRef": "PA267469",
+                                            "mandatRef": "PM645314"
+                                        },
+                                        {
+                                            "acteurRef": "PA267585",
+                                            "mandatRef": "PM645508"
+                                        },
+                                        {
+                                            "acteurRef": "PA267673",
+                                            "mandatRef": "PM645249"
+                                        },
+                                        {
+                                            "acteurRef": "PA267765",
+                                            "mandatRef": "PM645472"
+                                        },
+                                        {
+                                            "acteurRef": "PA267801",
+                                            "mandatRef": "PM645153"
+                                        },
+                                        {
+                                            "acteurRef": "PA331582",
+                                            "mandatRef": "PM645198"
+                                        },
+                                        {
+                                            "acteurRef": "PA333421",
+                                            "mandatRef": "PM645375"
+                                        },
+                                        {
+                                            "acteurRef": "PA331442",
+                                            "mandatRef": "PM645100"
+                                        },
+                                        {
+                                            "acteurRef": "PA332228",
+                                            "mandatRef": "PM645546"
+                                        },
+                                        {
+                                            "acteurRef": "PA610770",
+                                            "mandatRef": "PM645305"
+                                        },
+                                        {
+                                            "acteurRef": "PA610775",
+                                            "mandatRef": "PM645309"
+                                        },
+                                        {
+                                            "acteurRef": "PA695100",
+                                            "mandatRef": "PM695111"
+                                        },
+                                        {
+                                            "acteurRef": "PA702053",
+                                            "mandatRef": "PM702060"
+                                        },
+                                        {
+                                            "acteurRef": "PA642876",
+                                            "mandatRef": "PM712393"
+                                        }
+                                    ]
+                                },
+                                "nonVotants": "0",
+                                "pours": null
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "25",
+                                "pour": "0"
+                            },
+                            "positionMajoritaire": "contre"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "26",
+                        "organeRef": "PO645633",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA2045",
+                                            "mandatRef": "PM645421"
+                                        },
+                                        {
+                                            "acteurRef": "PA608186",
+                                            "mandatRef": "PM645202"
+                                        },
+                                        {
+                                            "acteurRef": "PA610860",
+                                            "mandatRef": "PM645212"
+                                        },
+                                        {
+                                            "acteurRef": "PA606545",
+                                            "mandatRef": "PM645470"
+                                        },
+                                        {
+                                            "acteurRef": "PA607632",
+                                            "mandatRef": "PM645387"
+                                        },
+                                        {
+                                            "acteurRef": "PA588872",
+                                            "mandatRef": "PM701032"
+                                        },
+                                        {
+                                            "acteurRef": "PA610002",
+                                            "mandatRef": "PM645053"
+                                        },
+                                        {
+                                            "acteurRef": "PA610427",
+                                            "mandatRef": "PM645158"
+                                        },
+                                        {
+                                            "acteurRef": "PA606910",
+                                            "mandatRef": "PM645547"
+                                        }
+                                    ]
+                                },
+                                "contres": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA309643",
+                                            "mandatRef": "PM645326"
+                                        },
+                                        {
+                                            "acteurRef": "PA1206",
+                                            "mandatRef": "PM645054"
+                                        },
+                                        {
+                                            "acteurRef": "PA605625",
+                                            "mandatRef": "PM645398"
+                                        },
+                                        {
+                                            "acteurRef": "PA606212",
+                                            "mandatRef": "PM645330"
+                                        },
+                                        {
+                                            "acteurRef": "PA609709",
+                                            "mandatRef": "PM645302"
+                                        },
+                                        {
+                                            "acteurRef": "PA610125",
+                                            "mandatRef": "PM645088"
+                                        }
+                                    ]
+                                },
+                                "nonVotants": "0",
+                                "pours": {
+                                    "votant": {
+                                        "acteurRef": "PA605922",
+                                        "mandatRef": "PM645493"
+                                    }
+                                }
+                            },
+                            "decompteVoix": {
+                                "abstention": "9",
+                                "contre": "6",
+                                "pour": "1"
+                            },
+                            "positionMajoritaire": "abstention"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "18",
+                        "organeRef": "PO656022",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": {
+                                    "votant": {
+                                        "acteurRef": "PA610733",
+                                        "mandatRef": "PM645290"
+                                    }
+                                },
+                                "nonVotants": "0",
+                                "pours": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA1809",
+                                            "mandatRef": "PM645415"
+                                        },
+                                        {
+                                            "acteurRef": "PA2713",
+                                            "mandatRef": "PM645148"
+                                        },
+                                        {
+                                            "acteurRef": "PA608120",
+                                            "mandatRef": "PM645159"
+                                        },
+                                        {
+                                            "acteurRef": "PA2828",
+                                            "mandatRef": "PM645402"
+                                        },
+                                        {
+                                            "acteurRef": "PA267336",
+                                            "mandatRef": "PM645424"
+                                        },
+                                        {
+                                            "acteurRef": "PA267407",
+                                            "mandatRef": "PM645320"
+                                        },
+                                        {
+                                            "acteurRef": "PA332950",
+                                            "mandatRef": "PM645251"
+                                        },
+                                        {
+                                            "acteurRef": "PA336175",
+                                            "mandatRef": "PM711812"
+                                        },
+                                        {
+                                            "acteurRef": "PA605084",
+                                            "mandatRef": "PM645537"
+                                        },
+                                        {
+                                            "acteurRef": "PA608292",
+                                            "mandatRef": "PM645276"
+                                        },
+                                        {
+                                            "acteurRef": "PA610521",
+                                            "mandatRef": "PM645190"
+                                        },
+                                        {
+                                            "acteurRef": "PA610615",
+                                            "mandatRef": "PM645243"
+                                        },
+                                        {
+                                            "acteurRef": "PA642910",
+                                            "mandatRef": "PM701220"
+                                        },
+                                        {
+                                            "acteurRef": "PA702054",
+                                            "mandatRef": "PM702804"
+                                        }
+                                    ]
+                                }
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "1",
+                                "pour": "14"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "15",
+                        "organeRef": "PO656018",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA295",
+                                            "mandatRef": "PM645103"
+                                        },
+                                        {
+                                            "acteurRef": "PA551",
+                                            "mandatRef": "PM645487"
+                                        },
+                                        {
+                                            "acteurRef": "PA1141",
+                                            "mandatRef": "PM645468"
+                                        },
+                                        {
+                                            "acteurRef": "PA1364",
+                                            "mandatRef": "PM645084"
+                                        },
+                                        {
+                                            "acteurRef": "PA441",
+                                            "mandatRef": "PM645279"
+                                        },
+                                        {
+                                            "acteurRef": "PA689",
+                                            "mandatRef": "PM645113"
+                                        },
+                                        {
+                                            "acteurRef": "PA754",
+                                            "mandatRef": "PM645050"
+                                        },
+                                        {
+                                            "acteurRef": "PA2075",
+                                            "mandatRef": "PM645260"
+                                        },
+                                        {
+                                            "acteurRef": "PA605745",
+                                            "mandatRef": "PM645435"
+                                        },
+                                        {
+                                            "acteurRef": "PA610654",
+                                            "mandatRef": "PM645267"
+                                        },
+                                        {
+                                            "acteurRef": "PA267306",
+                                            "mandatRef": "PM645210"
+                                        },
+                                        {
+                                            "acteurRef": "PA267492",
+                                            "mandatRef": "PM645465"
+                                        },
+                                        {
+                                            "acteurRef": "PA340755",
+                                            "mandatRef": "PM645506"
+                                        }
+                                    ]
+                                },
+                                "nonVotants": "0",
+                                "pours": {
+                                    "votant": {
+                                        "acteurRef": "PA610634",
+                                        "mandatRef": "PM645262"
+                                    }
+                                }
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "13",
+                                "pour": "1"
+                            },
+                            "positionMajoritaire": "contre"
+                        }
+                    }
+                ]
+            },
+            "organeRef": "PO644420"
+        }
+    }
+}

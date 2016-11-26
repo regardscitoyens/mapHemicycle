@@ -1,0 +1,323 @@
+{
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "dateScrutin": "2016-10-27",
+    "demandeur": {
+        "referenceLegislative": null,
+        "texte": "Pr\u00e9sident du groupe Les R\u00e9publicains"
+    },
+    "legislature": "14",
+    "miseAuPoint": null,
+    "modePublicationDesVotes": "DecompteNominatif",
+    "numero": "1345",
+    "objet": {
+        "libelle": "l'amendement n\u00b0 153 de la commission des affaires sociales et l'amendement identique n\u00b0 33 de M. Accoyer \u00e0 l'article 43 du projet de loi de financement de la s\u00e9curit\u00e9 sociale pour 2017 (premi\u00e8re lecture)",
+        "referenceLegislative": null
+    },
+    "organeRef": "PO644420",
+    "quantiemeJourSeance": "3",
+    "seanceRef": "RUANR5L14S2017IDS20327",
+    "sessionRef": "SCR5A2017O1",
+    "sort": {
+        "code": "rejet\u00e9",
+        "libelle": "L'Assembl\u00e9e nationale n'a pas adopt\u00e9"
+    },
+    "syntheseVote": {
+        "annonce": "L'Assembl\u00e9e nationale n'a pas adopt\u00e9",
+        "decompte": {
+            "abstention": "2",
+            "contre": "20",
+            "nonVotant": "2",
+            "pour": "12"
+        },
+        "nbrSuffragesRequis": "17",
+        "nombreVotants": "34",
+        "suffragesExprimes": "32"
+    },
+    "titre": "l'amendement n\u00b0 153 de la commission des affaires sociales et l'amendement identique n\u00b0 33 de M. Accoyer \u00e0 l'article 43 du projet de loi de financement de la s\u00e9curit\u00e9 sociale pour 2017 (premi\u00e8re lecture)",
+    "typeVote": {
+        "codeTypeVote": "SPO",
+        "libelleTypeVote": "scrutin public ordinaire",
+        "typeMajorite": "majorit\u00e9 absolue des suffrages exprim\u00e9s"
+    },
+    "uid": "VTANR5L14V1345",
+    "ventilationVotes": {
+        "organe": {
+            "groupes": {
+                "groupe": [
+                    {
+                        "nombreMembresGroupe": "288",
+                        "organeRef": "PO713077",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA356",
+                                            "mandatRef": "PM645358"
+                                        },
+                                        {
+                                            "acteurRef": "PA609691",
+                                            "mandatRef": "PM645296"
+                                        }
+                                    ]
+                                },
+                                "contres": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA610891",
+                                            "mandatRef": "PM645221"
+                                        },
+                                        {
+                                            "acteurRef": "PA877",
+                                            "mandatRef": "PM645349"
+                                        },
+                                        {
+                                            "acteurRef": "PA1689",
+                                            "mandatRef": "PM645378"
+                                        },
+                                        {
+                                            "acteurRef": "PA332384",
+                                            "mandatRef": "PM645528"
+                                        },
+                                        {
+                                            "acteurRef": "PA335543",
+                                            "mandatRef": "PM702197"
+                                        },
+                                        {
+                                            "acteurRef": "PA331924",
+                                            "mandatRef": "PM701034"
+                                        },
+                                        {
+                                            "acteurRef": "PA331014",
+                                            "mandatRef": "PM645422"
+                                        },
+                                        {
+                                            "acteurRef": "PA2693",
+                                            "mandatRef": "PM645419"
+                                        },
+                                        {
+                                            "acteurRef": "PA605703",
+                                            "mandatRef": "PM645418"
+                                        },
+                                        {
+                                            "acteurRef": "PA605888",
+                                            "mandatRef": "PM645476"
+                                        },
+                                        {
+                                            "acteurRef": "PA606412",
+                                            "mandatRef": "PM645400"
+                                        },
+                                        {
+                                            "acteurRef": "PA606363",
+                                            "mandatRef": "PM645388"
+                                        },
+                                        {
+                                            "acteurRef": "PA606924",
+                                            "mandatRef": "PM645527"
+                                        },
+                                        {
+                                            "acteurRef": "PA606991",
+                                            "mandatRef": "PM645098"
+                                        },
+                                        {
+                                            "acteurRef": "PA608785",
+                                            "mandatRef": "PM645567"
+                                        },
+                                        {
+                                            "acteurRef": "PA609743",
+                                            "mandatRef": "PM645321"
+                                        },
+                                        {
+                                            "acteurRef": "PA609816",
+                                            "mandatRef": "PM645334"
+                                        },
+                                        {
+                                            "acteurRef": "PA609314",
+                                            "mandatRef": "PM645145"
+                                        },
+                                        {
+                                            "acteurRef": "PA610529",
+                                            "mandatRef": "PM645192"
+                                        },
+                                        {
+                                            "acteurRef": "PA643002",
+                                            "mandatRef": "PM703297"
+                                        }
+                                    ]
+                                },
+                                "nonVotants": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA381",
+                                            "causePositionVote": "PAN",
+                                            "mandatRef": "PM645125"
+                                        },
+                                        {
+                                            "acteurRef": "PA1592",
+                                            "causePositionVote": "PSE",
+                                            "mandatRef": "PM645232"
+                                        }
+                                    ]
+                                },
+                                "pours": {
+                                    "votant": {
+                                        "acteurRef": "PA331753",
+                                        "mandatRef": "PM645348"
+                                    }
+                                }
+                            },
+                            "decompteVoix": {
+                                "abstention": "2",
+                                "contre": "20",
+                                "nonVotant": "2",
+                                "pour": "1"
+                            },
+                            "positionMajoritaire": "contre"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "199",
+                        "organeRef": "PO707869",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": null,
+                                "nonVotants": "0",
+                                "pours": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA606712",
+                                            "mandatRef": "PM645549"
+                                        },
+                                        {
+                                            "acteurRef": "PA230",
+                                            "mandatRef": "PM645553"
+                                        },
+                                        {
+                                            "acteurRef": "PA1874",
+                                            "mandatRef": "PM645474"
+                                        },
+                                        {
+                                            "acteurRef": "PA606693",
+                                            "mandatRef": "PM645542"
+                                        },
+                                        {
+                                            "acteurRef": "PA2815",
+                                            "mandatRef": "PM645514"
+                                        },
+                                        {
+                                            "acteurRef": "PA267289",
+                                            "mandatRef": "PM645242"
+                                        },
+                                        {
+                                            "acteurRef": "PA610830",
+                                            "mandatRef": "PM645039"
+                                        },
+                                        {
+                                            "acteurRef": "PA695511",
+                                            "mandatRef": "PM695513"
+                                        },
+                                        {
+                                            "acteurRef": "PA709315",
+                                            "mandatRef": "PM709318"
+                                        }
+                                    ]
+                                }
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "0",
+                                "pour": "9"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "27",
+                        "organeRef": "PO656010",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": null,
+                                "nonVotants": "0",
+                                "pours": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA345897",
+                                            "mandatRef": "PM645209"
+                                        },
+                                        {
+                                            "acteurRef": "PA267585",
+                                            "mandatRef": "PM645508"
+                                        }
+                                    ]
+                                }
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "0",
+                                "pour": "2"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "26",
+                        "organeRef": "PO645633",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": null,
+                                "nonVotants": "0",
+                                "pours": null
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "0",
+                                "pour": "0"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "18",
+                        "organeRef": "PO656022",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": null,
+                                "nonVotants": "0",
+                                "pours": null
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "0",
+                                "pour": "0"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "15",
+                        "organeRef": "PO656018",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": null,
+                                "nonVotants": "0",
+                                "pours": null
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "0",
+                                "pour": "0"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    }
+                ]
+            },
+            "organeRef": "PO644420"
+        }
+    }
+},

@@ -1,0 +1,497 @@
+{
+    "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "dateScrutin": "2012-07-17",
+    "demandeur": {
+        "referenceLegislative": null,
+        "texte": "Pr\u00e9sident du groupe de l'union pour un mouvement populaire"
+    },
+    "legislature": "14",
+    "miseAuPoint": {
+        "abstentions": null,
+        "contres": {
+            "votant": {
+                "acteurRef": "PA1874",
+                "mandatRef": "PM645474"
+            }
+        },
+        "nonVotants": null,
+        "nonVotantsVolontaires": null,
+        "pours": {
+            "votant": [
+                {
+                    "acteurRef": "PA2051",
+                    "mandatRef": "PM645056"
+                },
+                {
+                    "acteurRef": "PA607187",
+                    "mandatRef": "PM645224"
+                },
+                {
+                    "acteurRef": "PA872",
+                    "mandatRef": "PM645331"
+                },
+                {
+                    "acteurRef": "PA608276",
+                    "mandatRef": "PM645252"
+                },
+                {
+                    "acteurRef": "PA609016",
+                    "mandatRef": "PM645074"
+                },
+                {
+                    "acteurRef": "PA605069",
+                    "mandatRef": "PM645534"
+                },
+                {
+                    "acteurRef": "PA332636",
+                    "mandatRef": "PM645118"
+                },
+                {
+                    "acteurRef": "PA605703",
+                    "mandatRef": "PM645418"
+                },
+                {
+                    "acteurRef": "PA605830",
+                    "mandatRef": "PM645454"
+                },
+                {
+                    "acteurRef": "PA605888",
+                    "mandatRef": "PM645476"
+                },
+                {
+                    "acteurRef": "PA605963",
+                    "mandatRef": "PM645055"
+                },
+                {
+                    "acteurRef": "PA606161",
+                    "mandatRef": "PM645250"
+                },
+                {
+                    "acteurRef": "PA606555",
+                    "mandatRef": "PM645477"
+                },
+                {
+                    "acteurRef": "PA606924",
+                    "mandatRef": "PM645527"
+                },
+                {
+                    "acteurRef": "PA606991",
+                    "mandatRef": "PM645098"
+                },
+                {
+                    "acteurRef": "PA607283",
+                    "mandatRef": "PM645259"
+                },
+                {
+                    "acteurRef": "PA607310",
+                    "mandatRef": "PM645297"
+                },
+                {
+                    "acteurRef": "PA607155",
+                    "mandatRef": "PM645200"
+                },
+                {
+                    "acteurRef": "PA607509",
+                    "mandatRef": "PM645369"
+                },
+                {
+                    "acteurRef": "PA607553",
+                    "mandatRef": "PM645373"
+                },
+                {
+                    "acteurRef": "PA607892",
+                    "mandatRef": "PM645460"
+                },
+                {
+                    "acteurRef": "PA607699",
+                    "mandatRef": "PM645403"
+                },
+                {
+                    "acteurRef": "PA608328",
+                    "mandatRef": "PM645312"
+                },
+                {
+                    "acteurRef": "PA608172",
+                    "mandatRef": "PM645197"
+                },
+                {
+                    "acteurRef": "PA608684",
+                    "mandatRef": "PM645599"
+                },
+                {
+                    "acteurRef": "PA608778",
+                    "mandatRef": "PM645565"
+                },
+                {
+                    "acteurRef": "PA608785",
+                    "mandatRef": "PM645567"
+                },
+                {
+                    "acteurRef": "PA609743",
+                    "mandatRef": "PM645321"
+                },
+                {
+                    "acteurRef": "PA610002",
+                    "mandatRef": "PM645053"
+                },
+                {
+                    "acteurRef": "PA610427",
+                    "mandatRef": "PM645158"
+                },
+                {
+                    "acteurRef": "PA607369",
+                    "mandatRef": "PM645318"
+                },
+                {
+                    "acteurRef": "PA610529",
+                    "mandatRef": "PM645192"
+                },
+                {
+                    "acteurRef": "PA610594",
+                    "mandatRef": "PM645185"
+                },
+                {
+                    "acteurRef": "PA610615",
+                    "mandatRef": "PM645243"
+                },
+                {
+                    "acteurRef": "PA606910",
+                    "mandatRef": "PM645547"
+                },
+                {
+                    "acteurRef": "PA610729",
+                    "mandatRef": "PM645288"
+                },
+                {
+                    "acteurRef": "PA605922",
+                    "mandatRef": "PM645493"
+                },
+                {
+                    "acteurRef": "PA610850",
+                    "mandatRef": "PM645035"
+                }
+            ]
+        }
+    },
+    "modePublicationDesVotes": "DecompteDissidentsPositionGroupe",
+    "numero": "2",
+    "objet": {
+        "libelle": "l'article 1er du projet de loi de finances rectificative pour 2012 (abrogation de la TVA dite sociale).",
+        "referenceLegislative": null
+    },
+    "organeRef": "PO644420",
+    "quantiemeJourSeance": "1",
+    "seanceRef": "RUANR5L14S2012IDS16440",
+    "sessionRef": "SCR5A2012E1",
+    "sort": {
+        "code": "adopt\u00e9",
+        "libelle": "l'Assembl\u00e9e nationale a adopt\u00e9"
+    },
+    "syntheseVote": {
+        "annonce": "l'Assembl\u00e9e nationale a adopt\u00e9",
+        "decompte": {
+            "abstention": "1",
+            "contre": "48",
+            "nonVotant": "27",
+            "pour": "61"
+        },
+        "nbrSuffragesRequis": "55",
+        "nombreVotants": "110",
+        "suffragesExprimes": "109"
+    },
+    "titre": "l'article 1er du projet de loi de finances rectificative pour 2012 (abrogation de la TVA dite sociale).",
+    "typeVote": {
+        "codeTypeVote": "SPO",
+        "libelleTypeVote": "scrutin public ordinaire",
+        "typeMajorite": "majorit\u00e9 absolue des suffrages exprim\u00e9s"
+    },
+    "uid": "VTANR5L14V2",
+    "ventilationVotes": {
+        "organe": {
+            "groupes": {
+                "groupe": [
+                    {
+                        "nombreMembresGroupe": "295",
+                        "organeRef": "PO656002",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": null,
+                                "nonVotants": {
+                                    "votant": [
+                                        {
+                                            "acteurRef": "PA328",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645184"
+                                        },
+                                        {
+                                            "acteurRef": "PA381",
+                                            "causePositionVote": "PAN",
+                                            "mandatRef": "PM645125"
+                                        },
+                                        {
+                                            "acteurRef": "PA1268",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645112"
+                                        },
+                                        {
+                                            "acteurRef": "PA2912",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645085"
+                                        },
+                                        {
+                                            "acteurRef": "PA1816",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645051"
+                                        },
+                                        {
+                                            "acteurRef": "PA1893",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645245"
+                                        },
+                                        {
+                                            "acteurRef": "PA334160",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645133"
+                                        },
+                                        {
+                                            "acteurRef": "PA588886",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645620"
+                                        },
+                                        {
+                                            "acteurRef": "PA590032",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645180"
+                                        },
+                                        {
+                                            "acteurRef": "PA2825",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645568"
+                                        },
+                                        {
+                                            "acteurRef": "PA333285",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645365"
+                                        },
+                                        {
+                                            "acteurRef": "PA590034",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645519"
+                                        },
+                                        {
+                                            "acteurRef": "PA706",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645268"
+                                        },
+                                        {
+                                            "acteurRef": "PA785",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645345"
+                                        },
+                                        {
+                                            "acteurRef": "PA2240",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645077"
+                                        },
+                                        {
+                                            "acteurRef": "PA335017",
+                                            "causePositionVote": "PSE",
+                                            "mandatRef": "PM645607"
+                                        },
+                                        {
+                                            "acteurRef": "PA267622",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645033"
+                                        },
+                                        {
+                                            "acteurRef": "PA268048",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645257"
+                                        },
+                                        {
+                                            "acteurRef": "PA590031",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645352"
+                                        },
+                                        {
+                                            "acteurRef": "PA333611",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645389"
+                                        },
+                                        {
+                                            "acteurRef": "PA332364",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645525"
+                                        },
+                                        {
+                                            "acteurRef": "PA335532",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645082"
+                                        },
+                                        {
+                                            "acteurRef": "PA335543",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645096"
+                                        },
+                                        {
+                                            "acteurRef": "PA331924",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645417"
+                                        },
+                                        {
+                                            "acteurRef": "PA335999",
+                                            "causePositionVote": "MG",
+                                            "mandatRef": "PM645219"
+                                        }
+                                    ]
+                                },
+                                "pours": null
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "0",
+                                "nonVotant": "25",
+                                "pour": "57"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "196",
+                        "organeRef": "PO656006",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": null,
+                                "nonVotants": "0",
+                                "pours": null
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "41",
+                                "pour": "0"
+                            },
+                            "positionMajoritaire": "contre"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "29",
+                        "organeRef": "PO656010",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": null,
+                                "nonVotants": "0",
+                                "pours": null
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "7",
+                                "pour": "0"
+                            },
+                            "positionMajoritaire": "contre"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "18",
+                        "organeRef": "PO656014",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": null,
+                                "nonVotants": {
+                                    "votant": {
+                                        "acteurRef": "PA588872",
+                                        "causePositionVote": "MG",
+                                        "mandatRef": "PM645062"
+                                    }
+                                },
+                                "pours": null
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "0",
+                                "nonVotant": "1",
+                                "pour": "0"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "16",
+                        "organeRef": "PO656022",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": null,
+                                "nonVotants": {
+                                    "votant": {
+                                        "acteurRef": "PA336175",
+                                        "causePositionVote": "MG",
+                                        "mandatRef": "PM645264"
+                                    }
+                                },
+                                "pours": null
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "0",
+                                "nonVotant": "1",
+                                "pour": "1"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "15",
+                        "organeRef": "PO656018",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": null,
+                                "contres": null,
+                                "nonVotants": "0",
+                                "pours": null
+                            },
+                            "decompteVoix": {
+                                "abstention": "0",
+                                "contre": "0",
+                                "pour": "2"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    },
+                    {
+                        "nombreMembresGroupe": "8",
+                        "organeRef": "PO645633",
+                        "vote": {
+                            "decompteNominatif": {
+                                "abstentions": {
+                                    "votant": {
+                                        "acteurRef": "PA1838",
+                                        "mandatRef": "PM645238"
+                                    }
+                                },
+                                "contres": null,
+                                "nonVotants": "0",
+                                "pours": {
+                                    "votant": {
+                                        "acteurRef": "PA609709",
+                                        "mandatRef": "PM645302"
+                                    }
+                                }
+                            },
+                            "decompteVoix": {
+                                "abstention": "1",
+                                "contre": "0",
+                                "pour": "1"
+                            },
+                            "positionMajoritaire": "pour"
+                        }
+                    }
+                ]
+            },
+            "organeRef": "PO644420"
+        }
+    }
+},
