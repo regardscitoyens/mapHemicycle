@@ -1,2 +1,258 @@
-<html>
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Cartographie de l'Assemblée nationale</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.cyan-light_blue.min.css">
+  <link rel="stylesheet" href="css/mdl-selectfield.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <style>
+    .background {
+      fill: #eee;
+      pointer-events: all;
+    }
+    .map-layer {
+      fill: #fff;
+      stroke: #aaa;
+    }
+
+    #map{
+      /*height: 800px;*/
+      width: 1200px;
+    }
+
+    #map{
+      top:  0px;
+      margin:0;
+      padding:0;
+    }
+
+    #navigation_form option{
+      color: #333;
+    }
+
+    #navigation_form label{
+      color: #eee;
+    }
+    .mdl-selectfield__select, .mdl-selectfield{
+      width: 100%;
+    }
+
+    .mdl-layout-title{
+      flex-shrink:1;
+    }
+
+    #text_map_space{
+      flex-shrink:1;
+    }
+
+    #loading_grid{
+      z-index: 1000;
+      position: relative;
+      display: none;
+    }
+
+    #loading_sign{
+      width: 50px;
+      height: 50px;
+    }
+
+    #left_pannel p{
+      margin:3px;
+    }
+
+    #header_left a{
+      padding: 0 5px 15px 15px;
+
+    }
+
+    #map .mdl-card h4{
+      font-size: 18px;
+    }
+
+    @media (min-width: 1570px){
+
+
+      .mdl-layout--fixed-drawer>.mdl-layout__content {
+        margin-left: 0px;
+
+      }
+
+    }
+
+
+    .info_map {
+      padding: 6px 8px;
+      font: 14px/16px Arial, Helvetica, sans-serif;
+      background: white;
+      background: rgba(255,255,255,0.8);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      clear: none;
+    }
+
+    .bartext{
+      font-size: 11px;
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="container_in" class="dashboard-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <header class="dashboard-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Cartographie de l'assemblée nationale</span>
+        <div class="mdl-layout-spacer"></div>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+          <i class="material-icons">more_vert</i>
+        </button>
+        <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+          <li class="mdl-menu__item"><a class="mdl-navigation__link" href="#a_propos">A propos</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="left_pannel" class="dashboard-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+      <nav class="dashboard-navigation mdl-navigation mdl-color--blue-grey-800">
+        <header id="header_left"  class="mdl-color--blue-grey-900">
+        </header>
+
+
+      </nav>
+    </div>
+    <main class="mdl-layout__content mdl-color--grey-100">
+      <div class="mdl-grid dashboard-content">
+        <div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+          <div class="mdl-grid" id="map">
+
+        </div>
+      </div>
+      <div id="a_propos" class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+
+      </div>
+    </div>
+  </main>
+</div>
+<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+<script src="js/mdl-selectfield.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/d3.v4.min.js" charset="utf-8"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<script src="js/lodash.js"></script>
+</body>
+<script type="text/javascript">
+
+
+
+
+        function responsivefy(svg){
+
+// get container + svg aspect ratio
+var container = d3.select(svg.node().parentNode),
+width = parseInt(svg.style('width')),
+height = parseInt(svg.style("height")),
+aspect = width / height;
+
+
+// add viewBox and preserve aspectratio properties
+// call resize so that svg resizes on initial page load
+svg.attr("viewBox", "0 0 " + width + " " + height)
+.attr("preserveAspectRatio", "xMinYMid")
+.call(resize);
+
+// to register multiple listeners for the same event type
+d3.select(window).on("resize." + container.attr("id"), resize);
+
+// if ($(window).width() < 768) {var screendef = 0;}
+
+
+d3.select(window).on("resize", function(){
+
+
+  if (_.isUndefined(map) == false){
+    if (window.innerWidth < 768)
+    {
+      map.setZoom(14);
+    }
+    else{
+      map.setZoom(15);
+    }
+
+  }
+
+  is_small_screen = d3.select('#container_in').classed('is-small-screen') == true ? true :false;
+
+}
+);
+
+function resize() {
+
+  var targetWidth = parseInt(container.style("width"));
+
+  if (_.isNaN(targetWidth) == false){
+    svg.attr("width", targetWidth);
+    svg.attr("height", Math.round(targetWidth / aspect));
+  }
+}
+}
+
+$(function() {
+// Click on the form submit button to fire request
+$('#city_dep').change(function() {
+
+  var this_city = $('#city_dep').val();
+
+
+  if (this_city != 0){
+    queue()
+    .defer(d3.csv, 'data/geocode/' + this_city)
+    .await(makeMap);
+
+
+    textChange(cities_map_files_inverted[this_city]);
+
+    city_name
+    .text("de " + cities_map_files_inverted[this_city]) + ' (94)';
+    if (is_small_screen == true){
+      d3.select('#left_pannel').classed('is-visible', false)
+      .attr('aria-hidden', 'true');
+      d3.select('.mdl-layout__obfuscator').classed('is-visible', false);
+    }
+
+    d3.select("#loading_grid").style('display', 'flex');
+
+  }
+});
+});
+
+
+
+</script>
 </html>
