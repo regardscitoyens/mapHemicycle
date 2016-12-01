@@ -38,7 +38,7 @@
 
     #map{
       /*height: 800px;*/
-      width: 1200px;
+      /*width: 1200px;*/
     }
 
     #map{
@@ -113,6 +113,10 @@
 
     }
 
+    .dashboard-content {
+    max-width: 1280px;
+}
+
 
   </style>
 </head>
@@ -144,7 +148,7 @@
     <main class="mdl-layout__content mdl-color--grey-100">
       <div class="mdl-grid dashboard-content">
         <div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-          <div class="mdl-grid" id="map">
+          <div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid" id="map">
 
         </div>
       </div>
@@ -264,7 +268,8 @@ function make_svg (error, data_deputes, data_scrutin) {
     map.node().appendChild(imported_svg);
     
     // Colorize seat
-    var svg_map = d3.select('#map').select('svg');
+    var svg_map = d3.select('#map').select('svg')
+    .call(responsivefy);
     
     for (i in data_deputes){
     
@@ -314,10 +319,8 @@ function make_svg (error, data_deputes, data_scrutin) {
     
       var targetWidth = parseInt(container.style("width"));
     
-      if (_.isNaN(targetWidth) == false){
         svg.attr("width", targetWidth);
         svg.attr("height", Math.round(targetWidth / aspect));
-      }
     }
   }
 }
