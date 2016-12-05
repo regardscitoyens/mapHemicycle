@@ -2,298 +2,453 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>Cartographie de l'Assemblée nationale</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Cartographie de l'Assemblée nationale</title>
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+	<link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-  <meta name="msapplication-TileColor" content="#3372DF">
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#3372DF">
 
-  <link rel="stylesheet" href="css/font-roboto.css">
-  <link rel="stylesheet" href="css/icons-material.css">
-  <link rel="stylesheet" href="css/material.min.css">
-  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-roboto.css">
+	<link rel="stylesheet" href="css/icons-material.css">
+	<link rel="stylesheet" href="css/material.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
-  <style>
-    .background {
-      fill: #eee;
-      pointer-events: all;
-    }
-    .map-layer {
-      fill: #fff;
-      stroke: #aaa;
-    }
+	<style>
+		.background {
+			fill: #eee;
+			pointer-events: all;
+		}
+		.map-layer {
+			fill: #fff;
+			stroke: #aaa;
+		}
 
-    #map{
-      /*height: 800px;*/
-      /*width: 1200px;*/
-    }
+		#map{
+			/*height: 800px;*/
+			/*width: 1200px;*/
+		}
 
-    #map{
-      top:  0px;
-      margin:0;
-      padding:0;
-    }
+		#map{
+			top:  0px;
+			margin:0;
+			padding:0;
+		}
 
-    #navigation_form option{
-      color: #333;
-    }
+		#navigation_form option{
+			color: #333;
+		}
 
-    #navigation_form label{
-      color: #eee;
-    }
+		#navigation_form label{
+			color: #eee;
+		}
 
-    .mdl-layout-title{
-      flex-shrink:1;
-    }
+		.mdl-layout-title{
+			flex-shrink:1;
+		}
 
-    #text_map_space{
-      flex-shrink:1;
-    }
+		#text_map_space{
+			flex-shrink:1;
+		}
 
-    #loading_grid{
-      z-index: 1000;
-      position: relative;
-      display: none;
-    }
+		#loading_grid{
+			z-index: 1000;
+			position: relative;
+			display: none;
+		}
 
-    #loading_sign{
-      width: 50px;
-      height: 50px;
-    }
+		#loading_sign{
+			width: 50px;
+			height: 50px;
+		}
 
-    #left_pannel p{
-      margin:3px;
-    }
+		#left_pannel p{
+			margin:3px;
+		}
 
-    #header_left a{
-      padding: 0 5px 15px 15px;
+		#header_left a{
+			padding: 0 5px 15px 15px;
 
-    }
+		}
 
-    #map .mdl-card h4{
-      font-size: 18px;
-    }
+		#map .mdl-card h4{
+			font-size: 18px;
+		}
 
-    @media (min-width: 1570px){
-
-
-      .mdl-layout--fixed-drawer>.mdl-layout__content {
-        margin-left: 0px;
-
-      }
-
-    }
+		@media (min-width: 1570px){
 
 
-    .info_map {
-      padding: 6px 8px;
-      font: 14px/16px Arial, Helvetica, sans-serif;
-      background: white;
-      background: rgba(255,255,255,0.8);
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      border-radius: 5px;
-      clear: none;
-    }
+			.mdl-layout--fixed-drawer>.mdl-layout__content {
+				margin-left: 0px;
 
-    .bartext{
-      font-size: 11px;
+			}
 
-    }
+		}
 
-    .dashboard-content {
-    max-width: 1200px;
+
+		.info_map {
+			padding: 6px 8px;
+			font: 14px/16px Arial, Helvetica, sans-serif;
+			background: white;
+			background: rgba(255,255,255,0.8);
+			box-shadow: 0 0 15px rgba(0,0,0,0.2);
+			border-radius: 5px;
+			clear: none;
+		}
+
+		.bartext{
+			font-size: 11px;
+
+		}
+
+		.dashboard-content {
+			max-width: 1100px;
+		}
+
+.ticks {
+  font: 10px sans-serif;
 }
 
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
 
-  </style>
+.track {
+  stroke: #000;
+  stroke-opacity: 0.3;
+  stroke-width: 10px;
+}
+
+.track-inset {
+  stroke: #ddd;
+  stroke-width: 8px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  cursor: crosshair;
+}
+
+.handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}
+	</style>
 </head>
 <body>
-  <div id="container_in" class="dashboard-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-    <header class="dashboard-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Cartographie de l'assemblée nationale</span>
-        <div class="mdl-layout-spacer"></div>
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
-          <i class="material-icons">more_vert</i>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-          <li class="mdl-menu__item"><a class="mdl-navigation__link" href="#a_propos">A propos</a></li>
-        </ul>
-      </div>
-    </header>
-    <div id="left_pannel" class="dashboard-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-      <nav class="dashboard-navigation mdl-navigation mdl-color--blue-grey-800">
-        <header id="header_left"  class="mdl-color--blue-grey-900">
-        </header>
+	<div id="container_in" class="dashboard-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+		<header class="dashboard-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">Cartographie de l'assemblée nationale</span>
+				<div class="mdl-layout-spacer"></div>
+				<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+					<i class="material-icons">more_vert</i>
+				</button>
+				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+					<li class="mdl-menu__item"><a class="mdl-navigation__link" href="#a_propos">A propos</a></li>
+				</ul>
+			</div>
+		</header>
+		<div id="left_pannel" class="dashboard-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+			<nav class="dashboard-navigation mdl-navigation mdl-color--blue-grey-800">
+				<header id="header_left"  class="mdl-color--blue-grey-900">
+				</header>
 
-        <button onclick="loadGroupes()">Groupes politiques</button>
-        <button onclick="loadTest('solennel')">Scrutin solennel</button>
-        <button onclick="loadTest('ordinaire')">Scrutin ordinaire</button>
+				<button onclick="loadGroupes()">Groupes politiques</button>
+				<button onclick="loadTest('solennel')">Scrutin solennel</button>
+				<button onclick="loadTest('ordinaire')">Scrutin ordinaire</button>
 
-      </nav>
-    </div>
-    <main class="mdl-layout__content mdl-color--grey-100">
-      <div class="mdl-grid dashboard-content">
-        <div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-          <div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid" id="map">
+				            <div class="mdl-selectfield mdl-js-selectfield">
+              <select class="mdl-selectfield__select" id="select_scrutin" name="select_scrutin">
+              </select>
+              <label class="mdl-selectfield__label" for="select_scrutin">Sélectionner un scrutin</label>
+            </div>
 
-        </div>
-      </div>
-      <div id="a_propos" class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+			</nav>
+		</div>
+		<main class="mdl-layout__content mdl-color--grey-100">
+			<div class="mdl-grid dashboard-content">
+			<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+			<svg width="960" height="70" id="slider"> test slider</svg>
+			</div>
+				<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+					<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid" id="map">
 
-      </div>
-    </div>
-  </main>
-</div>
-<script src="js/material.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/d3.v4.min.js" charset="utf-8"></script>
-<script src="js/d3-scale-chromatic.v1.min.js"></script>
-<script src="js/queue.min.js"></script>
-<script src="js/lodash.js"></script>
+					</div>
+				</div>
+				<div id="a_propos" class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/material.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/d3.v4.min.js" charset="utf-8"></script>
+	<script src="js/d3-scale-chromatic.v1.min.js"></script>
+	<script src="js/queue.min.js"></script>
+	<script src="js/lodash.js"></script>
 </body>
 <script type="text/javascript">
 
-var map;
+	var map;
 
-function colorVotes(vote){
-  return {
-    "Pour": "green",
-    "Contre": "red",
-    "Abstention": "grey",
-    "Non-votant": "black"
-  }[vote] || "white"
-}
-function colorGroupes(vote){
-  return {
-    "NI": "green",
-    "GDR": "red",
-    "SER": "#df65b0",
-    "LR": "#08589e",
-    "UDI": "#4eb3d3",
-    "RRDP": "purple"
-  }[vote] || "grey"
+	var data_deputes;
+
+	var a_propos = d3.select('#a_propos');
+
+	function colorVotes(vote){
+		return {
+			"Pour": "green",
+			"Contre": "red",
+			"Abstention": "grey",
+			"Non-votant": "black"
+		}[vote] || "white"
+	}
+	function colorGroupes(vote){
+		return {
+			"NI": "green",
+			"GDR": "red",
+			"SER": "#df65b0",
+			"LR": "#08589e",
+			"UDI": "#4eb3d3",
+			"RRDP": "purple"
+		}[vote] || "grey"
+	}
+
+	var map = d3.select("#map");
+	var svg_map;
+	var parseDate = d3.timeParse("%Y-%m-%d");
+	var timeScale = d3.scaleTime();
+	var bisectDate = d3.bisector(function(d) { return d.date; }).left;
+
+var svg_slider = d3.select("svg#slider"),
+    margin_slider = {right: 50, left: 50},
+    width_slider = +svg_slider.attr("width") - margin_slider.left - margin_slider.right,
+    height_slider = +svg_slider.attr("height");
+
+
+var x = d3.scaleTime()
+    .range([0, width_slider])
+    .clamp(true);
+
+
+
+
+	function parseList(d){ 
+return JSON.parse(d)
 }
 
-map = d3.select("#map");
+var formatYearMonth = d3.timeFormat("%Y-%m");
+var formatDayMonthYear = d3.timeFormat("%d/%m/%Y");
 
 // map.append('svg')
 
 var color, groupesViz;
 
 function loadGroupes() {
-  groupesViz = true;
-  loadData("ordinaire");
-  $("#a_propos").html("")
+	groupesViz = true;
+	loadData("ordinaire");
+	$("#a_propos").html("")
 }
 function loadTest(name) {
-  groupesViz = false;
-  loadData(name)
+	groupesViz = false;
+	loadData(name)
 }
 
 function loadData(name) {
-  $("svg").remove()
-   queue()
-   .defer(d3.csv, "data/deputes.csv")
-   .defer(d3.json, "data/exemple-scrutin-"+name+".json")
-   .await(make_svg);
+	d3.select("svg#map_assemblee").remove()
+
+	queue()
+	.defer(d3.csv, "data/deputes.csv")
+	.defer(d3.json, "data/exemple-scrutin-"+name+".json")
+	.defer(d3.csv, "data/scrutins_tabular.csv")
+	.await(make_svg);
 }
 loadGroupes();
 
 var typesVote = {
-  abstentions: "Abstention",
-  pours: "Pour",
-  contres: "Contre",
-  nonVotants: "Non-votant"
+	abstentions: "Abstention",
+	pours: "Pour",
+	contres: "Contre",
+	nonVotants: "Non-votant"
 };
 
 function handleVotes(deputes, data){
-  if (!data) data = {};
-  Object.keys(typesVote).forEach(function(typ){
-    if (data[typ]) {
-      if (data[typ] === "0") {
-        data[typ] = {votant: []};
-      } else if (!Array.isArray(data[typ].votant)) {
-        data[typ].votant = [data[typ].votant];
-      }
-    }
-    (data[typ] || {votant: []}).votant.forEach(function(vt) {
-      deputes[vt.acteurRef.replace(/^PA/, '')].mandat = vt.mandatRef;
-      deputes[vt.acteurRef.replace(/^PA/, '')].vote = typesVote[typ];
-    });
-  });
+	if (!data) data = {};
+	Object.keys(typesVote).forEach(function(typ){
+		if (data[typ]) {
+			if (data[typ] === "0") {
+				data[typ] = {votant: []};
+			} else if (!Array.isArray(data[typ].votant)) {
+				data[typ].votant = [data[typ].votant];
+			}
+		}
+		(data[typ] || {votant: []}).votant.forEach(function(vt) {
+			deputes[vt.acteurRef.replace(/^PA/, '')].mandat = vt.mandatRef;
+			deputes[vt.acteurRef.replace(/^PA/, '')].vote = typesVote[typ];
+		});
+	});
 }
 
 function attach_votes(data_scrutin, deputes) {
-  data_scrutin.ventilationVotes.organe.groupes.groupe.forEach(function(g){
-    var groupe = {
-      id: g.organeRef,
-      n_membres: g.nombreMembresGroupe,
-      vote_majo: g.vote.positionMajoritaire,
-      decompteVoix: g.vote.decompteVoix
-    };
-    handleVotes(deputes, g.vote.decompteNominatif);
-  });
-  handleVotes(deputes, data_scrutin.miseAuPoint);
+	data_scrutin.ventilationVotes.organe.groupes.groupe.forEach(function(g){
+		var groupe = {
+			id: g.organeRef,
+			n_membres: g.nombreMembresGroupe,
+			vote_majo: g.vote.positionMajoritaire,
+			decompteVoix: g.vote.decompteVoix
+		};
+		handleVotes(deputes, g.vote.decompteNominatif);
+	});
+	handleVotes(deputes, data_scrutin.miseAuPoint);
 }
 
-function make_svg (error, data_deputes, data_scrutin) {
-  var deputes = {};
-  data_deputes.forEach(function(d){
-    deputes[d.id_an] = d;
-  });
-  attach_votes(data_scrutin, deputes);
-  console.log(deputes);
-  $("#a_propos").html(data_scrutin.titre)
+var getYear = d3.timeFormat("%Y");
 
-  d3.xml("img/hemicycle-an.svg").mimeType("image/svg+xml").get(function(error, xml) {
-  
-    if (error) throw error;
-  
-    var imported_svg= xml.documentElement;
-  
-    map.node().appendChild(imported_svg);
-    
+function make_svg (error, data_deputes, data_scrutin, all_scrutins) {
+
+
+
+	var deputes = {};
+	data_deputes.forEach(function(d){
+		deputes[d.id_an] = d;
+	});
+	attach_votes(data_scrutin, deputes);
+
+	all_scrutins.forEach(function(d){
+
+		d.date = parseDate(d.dateScrutin);
+		d.year_month = formatYearMonth(d.date);
+		d.year = +getYear(d.date);
+		d.all_votes = parseList(d.all_votes);
+
+	})
+
+	var all_scrutions_solennels = all_scrutins.filter(function(d){return d.type_vote == 'scrutin public solennel'});
+
+	var date_extent = d3.extent(all_scrutions_solennels, function(d){ return d.date});
+
+	timeScale.domain(date_extent);
+
+
+insert_slider(all_scrutions_solennels, data_deputes, date_extent);
+
+$("#a_propos").html(data_scrutin.titre)
+
+d3.xml("img/hemicycle-an.svg").mimeType("image/svg+xml").get(function(error, xml) {
+
+	if (error) throw error;
+
+	var imported_svg= xml.documentElement;
+
+	map.node().appendChild(imported_svg);
+
     // Colorize seat
-    var svg_map = d3.select('#map').select('svg')
+    svg_map = d3.select('#map').select('svg')
+    .attr('id', 'map_assemblee')
     .call(responsivefy);
     
     for (i in data_deputes){
-    
-      var d = data_deputes[i];	
-      
-      svg_map.select('path[place="' + d.place_en_hemicycle +  '"]')
-          .attr('fill', (groupesViz ? colorGroupes(d.groupe_sigle) : colorVotes(d.vote)))
-      .attr('id', 'id_' + d.place_en_hemicycle)
-      // .on('click', mouseover(d))
-      // .on('mouseout', mouseout)
+
+    	var d = data_deputes[i];	
+    	var this_path = svg_map.select('path[place="' + d.place_en_hemicycle +  '"]');
+    	this_path.datum(d);
+
+
+    	this_path
+    	.attr('fill', (groupesViz ? colorGroupes(d.groupe_sigle) : colorVotes(d.vote)))
+    	.attr('id', 'id_' + d.place_en_hemicycle)
       .append('title').text(d.nom)
       ;
+
+      this_path
+      .on('click', function(d){return mouseover_seat(d)});
+
+  
       
-      var this_path = svg_map.select('path[place="' + d.place_en_hemicycle +  '"]');
-      
-      this_path.datum(d);
-      
-      this_path.on('click', function(d){return mouseover(d)});
-      
+  }
+
+var selectScrutin = d3.select('#select_scrutin');
+
+selectScrutin.selectAll('option')
+.data(all_scrutions_solennels)
+.enter()
+.append('option')
+.attr('value', function(d){ return d.numero})
+.text(function(d){ return d.titre});
+
+
+// Click on the form submit button to fire request
+$('#select_scrutin').change(function() {
+
+var this_srutin = $('#select_scrutin').val();
+
+
+
+var this_scrutin_data = all_scrutions_solennels.filter(function(d){ return d.numero == this_srutin});
+
+
+var this_scrutin_votes = this_scrutin_data[0].all_votes;
+
+var scrutin_title = this_scrutin_data[0].titre;
+
+data_deputes.forEach(function(d){
+
+d.vote = this_scrutin_votes['PA' + d.id_an]
+})
+
+changevote(data_deputes, scrutin_title);
+
+})
+
+
+
+});
+
+
+}
+
+function mouseover_seat(d){
+	console.log(d);
+
+}
+
+
+function changevote(data_deputes, scrutin_title){
+
+    for (i in data_deputes){
+    	var d = data_deputes[i];
+    	var this_path = svg_map.select('path[place="' + d.place_en_hemicycle +  '"]');
+    	this_path.datum(d);
+    	this_path
+    	.attr('fill', (function(d){return colorVotes(d.vote)}));
     }
-  });
-  
-  function responsivefy(svg){
-  
+
+    a_propos.html(scrutin_title);
+
+}
+
+
+function responsivefy(svg){
+
     // get container + svg aspect ratio
     var container = d3.select(svg.node().parentNode),
     width = parseInt(svg.style('width')),
@@ -312,17 +467,75 @@ function make_svg (error, data_deputes, data_scrutin) {
     // if ($(window).width() < 768) {var screendef = 0;}
     
     d3.select(window).on("resize", function(){
-  
+
     });
     
     function resize() {
-    
-      var targetWidth = parseInt(container.style("width"));
-    
-        svg.attr("width", targetWidth);
-        svg.attr("height", Math.round(targetWidth / aspect));
+
+    	var targetWidth = parseInt(container.style("width"));
+
+    	svg.attr("width", targetWidth);
+    	svg.attr("height", Math.round(targetWidth / aspect));
     }
-  }
+}
+
+
+function insert_slider(data, data_deputes, date_extent){
+
+
+x.domain(date_extent);
+
+var slider = svg_slider
+.call(responsivefy).append("g")
+    .attr("class", "slider")
+    .attr("transform", "translate(" + margin_slider.left + "," + height_slider / 2 + ")");
+
+
+slider.append("line")
+    .attr("class", "track")
+    .attr("x1", x.range()[0])
+    .attr("x2", x.range()[1])
+  .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-inset")
+  .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-overlay")
+    .call(d3.drag()
+        .on("start.interrupt", function() { slider.interrupt(); })
+        .on("start drag", function() { move_slider(x.invert(d3.event.x)); }));
+
+slider.insert("g", ".track-overlay")
+    .attr("class", "ticks")
+    .attr("transform", "translate(0," + 18 + ")")
+  .selectAll("text")
+  .data(x.ticks(10))
+  .enter().append("text")
+    .attr("x", x)
+    .attr("text-anchor", "middle")
+    .text(function(d) { return formatYearMonth(d); });
+
+
+var handle = slider.insert("circle", ".track-overlay")
+    .attr("class", "handle")
+    .attr("r", 9);
+
+function move_slider(h) {
+  handle.attr("cx", x(h));
+
+  var scrutin_index = bisectDate(data, h);
+
+var this_scrutin_votes = data[scrutin_index].all_votes;
+var scrutin_title = data[scrutin_index].titre;
+
+data_deputes.forEach(function(d){
+
+d.vote = this_scrutin_votes['PA' + d.id_an]
+})
+changevote(data_deputes, scrutin_title);
+
+
+
+}
+
 }
 
 </script>
