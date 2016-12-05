@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<title>Cartographie de l'Assemblée nationale</title>
+	<title>Panorama des votes à l'Assemblée nationale</title>
 
 	<!-- Add to homescreen for Chrome on Android -->
 	<meta name="mobile-web-app-capable" content="yes">
@@ -117,46 +117,58 @@
 			max-width: 1100px;
 		}
 
-.ticks {
-  font: 10px sans-serif;
-}
+		.ticks {
+			font: 10px sans-serif;
+		}
 
-.track,
-.track-inset,
-.track-overlay {
-  stroke-linecap: round;
-}
+		.track,
+		.track-inset,
+		.track-overlay {
+			stroke-linecap: round;
+		}
 
-.track {
-  stroke: #000;
-  stroke-opacity: 0.3;
-  stroke-width: 10px;
-}
+		.track {
+			stroke: #000;
+			stroke-opacity: 0.3;
+			stroke-width: 10px;
+		}
 
-.track-inset {
-  stroke: #ddd;
-  stroke-width: 8px;
-}
+		.track-inset {
+			stroke: #ddd;
+			stroke-width: 8px;
+		}
 
-.track-overlay {
-  pointer-events: stroke;
-  stroke-width: 50px;
-  cursor: crosshair;
-}
+		.track-overlay {
+			pointer-events: stroke;
+			stroke-width: 50px;
+			cursor: crosshair;
+		}
 
-.handle {
-  fill: #fff;
-  stroke: #000;
-  stroke-opacity: 0.5;
-  stroke-width: 1.25px;
+		.handle {
+			fill: #fff;
+			stroke: #000;
+			stroke-opacity: 0.5;
+			stroke-width: 1.25px;
+		}
+
+		#titre_scrutin{
+			display: flex;
+
+
+		}
+
+		#titre_scrutin:first-letter {
+    text-transform: uppercase;
 }
 	</style>
 </head>
 <body>
+	<div id="tooltip" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" data-upgraded=",MaterialTooltip" style="">
+	</div>
 	<div id="container_in" class="dashboard-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 		<header class="dashboard-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
 			<div class="mdl-layout__header-row">
-				<span class="mdl-layout-title">Cartographie de l'assemblée nationale</span>
+				<span class="mdl-layout-title">Panorama des votes à l'Assemblée nationale</span>
 				<div class="mdl-layout-spacer"></div>
 				<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
 					<i class="material-icons">more_vert</i>
@@ -175,20 +187,23 @@
 				<button onclick="loadTest('solennel')">Scrutin solennel</button>
 				<button onclick="loadTest('ordinaire')">Scrutin ordinaire</button>
 
-				            <div class="mdl-selectfield mdl-js-selectfield">
-              <select class="mdl-selectfield__select" id="select_scrutin" name="select_scrutin">
-              </select>
-              <label class="mdl-selectfield__label" for="select_scrutin">Sélectionner un scrutin</label>
-            </div>
-
+				<div class="mdl-selectfield mdl-js-selectfield">
+					<select class="mdl-selectfield__select" id="select_scrutin" name="select_scrutin">
+					</select>
+					<label class="mdl-selectfield__label" for="select_scrutin">Sélectionner un scrutin</label>
+				</div>
 			</nav>
 		</div>
 		<main class="mdl-layout__content mdl-color--grey-100">
 			<div class="mdl-grid dashboard-content">
-			<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-			<svg width="960" height="70" id="slider"> test slider</svg>
-			</div>
+<!-- 				<div id="titre_scrutin" class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+				Composition politique de l'Assemblée Nationale
+				</div> -->
 				<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+					<svg width="960" height="70" id="slider"></svg>
+				</div>
+				<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+								<h4 id= "titre_scrutin"></h4>
 					<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid" id="map">
 
 					</div>
@@ -197,6 +212,7 @@
 
 				</div>
 			</div>
+
 		</main>
 	</div>
 	<script src="js/material.min.js"></script>
@@ -212,7 +228,7 @@
 
 	var data_deputes;
 
-	var a_propos = d3.select('#a_propos');
+	var titre_scrutin = d3.select('#titre_scrutin');
 
 	function colorVotes(vote){
 		return {
@@ -239,25 +255,32 @@
 	var timeScale = d3.scaleTime();
 	var bisectDate = d3.bisector(function(d) { return d.date; }).left;
 
-var svg_slider = d3.select("svg#slider"),
-    margin_slider = {right: 50, left: 50},
-    width_slider = +svg_slider.attr("width") - margin_slider.left - margin_slider.right,
-    height_slider = +svg_slider.attr("height");
+	var svg_slider = d3.select("svg#slider"),
+	margin_slider = {right: 50, left: 50},
+	width_slider = +svg_slider.attr("width") - margin_slider.left - margin_slider.right,
+	height_slider = +svg_slider.attr("height");
 
 
-var x = d3.scaleTime()
-    .range([0, width_slider])
-    .clamp(true);
+	var x = d3.scaleTime()
+	.range([0, width_slider])
+	.clamp(true);
 
 
 
 
 	function parseList(d){ 
-return JSON.parse(d)
-}
+		return JSON.parse(d)
+	}
 
-var formatYearMonth = d3.timeFormat("%Y-%m");
-var formatDayMonthYear = d3.timeFormat("%d/%m/%Y");
+	function parsePixel(d){
+		return +(d.replace('px', ''))
+	}
+
+	function suppress_article(d){
+		return _.upperFirst(_.trim(d.replace(/^le /, "").replace(/^l'/, "").replace(/^la /, "")));
+	}
+	var formatYearMonth = d3.timeFormat("%Y-%m");
+	var formatDayMonthYear = d3.timeFormat("%d/%m/%Y");
 
 // map.append('svg')
 
@@ -266,11 +289,36 @@ var color, groupesViz;
 function loadGroupes() {
 	groupesViz = true;
 	loadData("ordinaire");
-	$("#a_propos").html("")
+	$("#titre_scrutin").html("Composition des groupes à l'Assemblée Nationale")
 }
 function loadTest(name) {
 	groupesViz = false;
 	loadData(name)
+}
+
+var tooltip = d3.select("#tooltip");
+
+function show_tooltip(d, x, y){
+
+
+	var margin_bottom = +(parsePixel(tooltip.style("height")) + parsePixel(tooltip.style("padding-bottom")) + parsePixel(tooltip.style("padding-top")));
+
+	tooltip
+	.style('position', 'absolute')
+	.style("left", x + "px")
+	.style("top", (y - margin_bottom) + "px")
+	.classed('is-active', true)
+	.html("<strong>" + d.nom + "</strong><br />"
+		+ d.parti_ratt_financier);
+
+
+}
+
+
+function hide_tooltip(){
+	tooltip
+	.classed('is-active', false);
+
 }
 
 function loadData(name) {
@@ -349,17 +397,17 @@ function make_svg (error, data_deputes, data_scrutin, all_scrutins) {
 	timeScale.domain(date_extent);
 
 
-insert_slider(all_scrutions_solennels, data_deputes, date_extent);
+	insert_slider(all_scrutions_solennels, data_deputes, date_extent);
 
-$("#a_propos").html(data_scrutin.titre)
+	// $("#titre_scrutin").html(suppress_article(data_scrutin.titre))
 
-d3.xml("img/hemicycle-an.svg").mimeType("image/svg+xml").get(function(error, xml) {
+	d3.xml("img/hemicycle-an.svg").mimeType("image/svg+xml").get(function(error, xml) {
 
-	if (error) throw error;
+		if (error) throw error;
 
-	var imported_svg= xml.documentElement;
+		var imported_svg= xml.documentElement;
 
-	map.node().appendChild(imported_svg);
+		map.node().appendChild(imported_svg);
 
     // Colorize seat
     svg_map = d3.select('#map').select('svg')
@@ -376,46 +424,49 @@ d3.xml("img/hemicycle-an.svg").mimeType("image/svg+xml").get(function(error, xml
     	this_path
     	.attr('fill', (groupesViz ? colorGroupes(d.groupe_sigle) : colorVotes(d.vote)))
     	.attr('id', 'id_' + d.place_en_hemicycle)
-      .append('title').text(d.nom)
+      // .append('title').text(d.nom)
       ;
 
-      this_path
-      .on('click', function(d){return mouseover_seat(d)});
 
-  
+      this_path
+      .on('mouseover', function(d){show_tooltip(d, d3.event.x, d3.event.y)})
+      .on('mouseout', function(d){hide_tooltip()})
+      ;
+
+
       
   }
 
-var selectScrutin = d3.select('#select_scrutin');
+  var selectScrutin = d3.select('#select_scrutin');
 
-selectScrutin.selectAll('option')
-.data(all_scrutions_solennels)
-.enter()
-.append('option')
-.attr('value', function(d){ return d.numero})
-.text(function(d){ return d.titre});
+  selectScrutin.selectAll('option')
+  .data(all_scrutions_solennels)
+  .enter()
+  .append('option')
+  .attr('value', function(d){ return d.numero})
+  .text(function(d){ return d.titre});
 
 
 // Click on the form submit button to fire request
 $('#select_scrutin').change(function() {
 
-var this_srutin = $('#select_scrutin').val();
+	var this_srutin = $('#select_scrutin').val();
 
 
 
-var this_scrutin_data = all_scrutions_solennels.filter(function(d){ return d.numero == this_srutin});
+	var this_scrutin_data = all_scrutions_solennels.filter(function(d){ return d.numero == this_srutin});
 
 
-var this_scrutin_votes = this_scrutin_data[0].all_votes;
+	var this_scrutin_votes = this_scrutin_data[0].all_votes;
 
-var scrutin_title = this_scrutin_data[0].titre;
+	var scrutin_title = this_scrutin_data[0].titre;
 
-data_deputes.forEach(function(d){
+	data_deputes.forEach(function(d){
 
-d.vote = this_scrutin_votes['PA' + d.id_an]
-})
+		d.vote = this_scrutin_votes['PA' + d.id_an]
+	})
 
-changevote(data_deputes, scrutin_title);
+	changevote(data_deputes, scrutin_title);
 
 })
 
@@ -426,23 +477,18 @@ changevote(data_deputes, scrutin_title);
 
 }
 
-function mouseover_seat(d){
-	console.log(d);
-
-}
-
 
 function changevote(data_deputes, scrutin_title){
 
-    for (i in data_deputes){
-    	var d = data_deputes[i];
-    	var this_path = svg_map.select('path[place="' + d.place_en_hemicycle +  '"]');
-    	this_path.datum(d);
-    	this_path
-    	.attr('fill', (function(d){return colorVotes(d.vote)}));
-    }
+	for (i in data_deputes){
+		var d = data_deputes[i];
+		var this_path = svg_map.select('path[place="' + d.place_en_hemicycle +  '"]');
+		this_path.datum(d);
+		this_path
+		.attr('fill', (function(d){return colorVotes(d.vote)}));
+	}
 
-    a_propos.html(scrutin_title);
+	titre_scrutin.html(suppress_article(scrutin_title));
 
 }
 
@@ -483,58 +529,58 @@ function responsivefy(svg){
 function insert_slider(data, data_deputes, date_extent){
 
 
-x.domain(date_extent);
+	x.domain(date_extent);
 
-var slider = svg_slider
-.call(responsivefy).append("g")
-    .attr("class", "slider")
-    .attr("transform", "translate(" + margin_slider.left + "," + height_slider / 2 + ")");
-
-
-slider.append("line")
-    .attr("class", "track")
-    .attr("x1", x.range()[0])
-    .attr("x2", x.range()[1])
-  .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
-    .attr("class", "track-inset")
-  .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
-    .attr("class", "track-overlay")
-    .call(d3.drag()
-        .on("start.interrupt", function() { slider.interrupt(); })
-        .on("start drag", function() { move_slider(x.invert(d3.event.x)); }));
-
-slider.insert("g", ".track-overlay")
-    .attr("class", "ticks")
-    .attr("transform", "translate(0," + 18 + ")")
-  .selectAll("text")
-  .data(x.ticks(10))
-  .enter().append("text")
-    .attr("x", x)
-    .attr("text-anchor", "middle")
-    .text(function(d) { return formatYearMonth(d); });
+	var slider = svg_slider
+	.call(responsivefy).append("g")
+	.attr("class", "slider")
+	.attr("transform", "translate(" + margin_slider.left + "," + height_slider / 2 + ")");
 
 
-var handle = slider.insert("circle", ".track-overlay")
-    .attr("class", "handle")
-    .attr("r", 9);
+	slider.append("line")
+	.attr("class", "track")
+	.attr("x1", x.range()[0])
+	.attr("x2", x.range()[1])
+	.select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+	.attr("class", "track-inset")
+	.select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+	.attr("class", "track-overlay")
+	.call(d3.drag()
+		.on("start.interrupt", function() { slider.interrupt(); })
+		.on("start drag", function() { move_slider(x.invert(d3.event.x)); }));
 
-function move_slider(h) {
-  handle.attr("cx", x(h));
-
-  var scrutin_index = bisectDate(data, h);
-
-var this_scrutin_votes = data[scrutin_index].all_votes;
-var scrutin_title = data[scrutin_index].titre;
-
-data_deputes.forEach(function(d){
-
-d.vote = this_scrutin_votes['PA' + d.id_an]
-})
-changevote(data_deputes, scrutin_title);
+	slider.insert("g", ".track-overlay")
+	.attr("class", "ticks")
+	.attr("transform", "translate(0," + 18 + ")")
+	.selectAll("text")
+	.data(x.ticks(10))
+	.enter().append("text")
+	.attr("x", x)
+	.attr("text-anchor", "middle")
+	.text(function(d) { return formatYearMonth(d); });
 
 
+	var handle = slider.insert("circle", ".track-overlay")
+	.attr("class", "handle")
+	.attr("r", 9);
 
-}
+	function move_slider(h) {
+		handle.attr("cx", x(h));
+
+		var scrutin_index = bisectDate(data, h);
+
+		var this_scrutin_votes = data[scrutin_index].all_votes;
+		var scrutin_title = data[scrutin_index].titre;
+
+		data_deputes.forEach(function(d){
+
+			d.vote = this_scrutin_votes['PA' + d.id_an]
+		})
+		changevote(data_deputes, scrutin_title);
+
+
+
+	}
 
 }
 
