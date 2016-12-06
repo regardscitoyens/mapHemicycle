@@ -200,10 +200,10 @@
 				Composition politique de l'Assemblée Nationale
 				</div> -->
 				<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-					<svg width="960" height="70" id="slider"></svg>
+					<svg width="960" height="70" id="slider" style="overflow:visible;"></svg>
 				</div>
 				<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-								<h4 id= "titre_scrutin"></h4>
+								<h5 class="mdl-typography--headline" id= "titre_scrutin"></h5>
 					<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid" id="map">
 
 					</div>
@@ -401,7 +401,7 @@ function make_svg (error, data_deputes, data_scrutin, all_scrutins) {
 
 	// $("#titre_scrutin").html(suppress_article(data_scrutin.titre))
 
-	d3.xml("img/hemicycle-an.svg").mimeType("image/svg+xml").get(function(error, xml) {
+	d3.xml("img/hemicycle-an.svg?a=1").mimeType("image/svg+xml").get(function(error, xml) {
 
 		if (error) throw error;
 
@@ -500,6 +500,8 @@ function responsivefy(svg){
     width = parseInt(svg.style('width')),
     height = parseInt(svg.style("height")),
     aspect = width / height;
+
+    console.log(aspect);
     
     // add viewBox and preserve aspectratio properties
     // call resize so that svg resizes on initial page load
@@ -512,9 +514,11 @@ function responsivefy(svg){
     
     // if ($(window).width() < 768) {var screendef = 0;}
     
-    d3.select(window).on("resize", function(){
+    // d3.select(window).on("resize", function(){
 
-    });
+    	// console.log(parseInt(svg.style('width')));
+
+    // });
     
     function resize() {
 
@@ -522,6 +526,7 @@ function responsivefy(svg){
 
     	svg.attr("width", targetWidth);
     	svg.attr("height", Math.round(targetWidth / aspect));
+    	// console.log(aspect);
     }
 }
 
