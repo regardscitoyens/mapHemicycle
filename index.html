@@ -272,9 +272,6 @@
 		return JSON.parse(d)
 	}
 
-	function parsePixel(d){
-		return +(d.replace('px', ''))
-	}
 
 	function suppress_article(d){
 		return _.upperFirst(_.trim(d.replace(/^le /, "").replace(/^l'/, "").replace(/^la /, "")));
@@ -301,7 +298,7 @@ var tooltip = d3.select("#tooltip");
 function show_tooltip(d, x, y){
 
 
-	var margin_bottom = +(parsePixel(tooltip.style("height")) + parsePixel(tooltip.style("padding-bottom")) + parsePixel(tooltip.style("padding-top")));
+	var margin_bottom = +( parseInt(tooltip.style("height")) +  parseInt(tooltip.style("padding-bottom")) +  parseInt(tooltip.style("padding-top")));
 
 	tooltip
 	.style('position', 'absolute')
@@ -501,7 +498,6 @@ function responsivefy(svg){
     height = parseInt(svg.style("height")),
     aspect = width / height;
 
-    console.log(aspect);
     
     // add viewBox and preserve aspectratio properties
     // call resize so that svg resizes on initial page load
@@ -512,13 +508,6 @@ function responsivefy(svg){
     // to register multiple listeners for the same event type
     d3.select(window).on("resize." + container.attr("id"), resize);
     
-    // if ($(window).width() < 768) {var screendef = 0;}
-    
-    // d3.select(window).on("resize", function(){
-
-    	// console.log(parseInt(svg.style('width')));
-
-    // });
     
     function resize() {
 
@@ -526,7 +515,7 @@ function responsivefy(svg){
 
     	svg.attr("width", targetWidth);
     	svg.attr("height", Math.round(targetWidth / aspect));
-    	// console.log(aspect);
+
     }
 }
 
