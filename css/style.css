@@ -447,3 +447,31 @@ _:-ms-input-placeholder, :root .dashboard-graph {
   cursor: pointer;
   color:red;
 }
+
+
+#initialize .mdl-button {
+    background: #dd4444;
+
+  }
+
+#titre_scrutin{
+    margin-top: 6px;
+}
+
+#date_scrutin{
+}
+
+@media (max-width: 767px) {
+
+#titre_scrutin{
+    font-size: 18px;
+    line-height: 23px;
+}
+
+#date_scrutin button{
+  height: 22px;
+  line-height: 18px;
+  font-size: 13px;
+}
+
+}

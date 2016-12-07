@@ -7,6 +7,8 @@
 	groupesViz;
 
 	var titre_scrutin = d3.select('#titre_scrutin');
+	var date_scrutin = d3.select('#date_scrutin');
+	var texte_scrutin = d3.select('#texte_scrutin');
 
 
 	var map = d3.select("#map");
@@ -67,7 +69,8 @@
 	function loadGroupes() {
 		groupesViz = true;
 		loadData("ordinaire");
-		$("#titre_scrutin").html("Composition des groupes à l'Assemblée Nationale")
+		$("#titre_scrutin").html("Composition des groupes à l'Assemblée Nationale");
+		date_scrutin.html('');
 	}
 
 	function show_tooltip(d, x, y){
@@ -195,40 +198,11 @@
 
     }
 
-    var selectScrutin = d3.select('#select_scrutin');
-
-
-    selectScrutin.selectAll('option')
-    .data(all_scrutions_solennels)
-    .enter()
-    .append('option')
-    .attr('value', function(d){ return d.numero})
-    .text(function(d){ return d.titre});
-
-
-// Click on the form submit button to fire request
-$('#select_scrutin').change(function() {
-
-	var this_srutin = $('#select_scrutin').val();
-	var this_scrutin_data = all_scrutions_solennels.filter(function(d){ return d.numero == this_srutin});
-	var this_scrutin_votes = this_scrutin_data[0].all_votes;
-	var scrutin_title = this_scrutin_data[0].titre;
-
-	data_deputes.forEach(function(d){
-
-		d.vote = this_scrutin_votes['PA' + d.id_an]
-	})
-
-	changevote(data_deputes, scrutin_title);
-
-})
-
-
 });
 
 	}
 
-	function changevote(data_deputes, scrutin_title){
+	function changevote(data_deputes, scrutin_title, scrutin_date){
 
 		for (i in data_deputes){
 			var d = data_deputes[i];
@@ -241,7 +215,9 @@ $('#select_scrutin').change(function() {
 		}
 
 		titre_scrutin.html(suppress_article(scrutin_title));
-		titre_scrutin.style("min-height", parseInt(titre_scrutin.style("line-height")) *3 + "px");
+		date_scrutin.html('<button class="mdl-button mdl-js-button mdl-button--raised">' + scrutin_date + '</button>');
+		texte_scrutin.style("min-height", parseInt(titre_scrutin.style("line-height")) *3 +parseInt(date_scrutin.style("height")) 
+			+ parseInt(titre_scrutin.style("margin-bottom"))+ parseInt(titre_scrutin.style("margin-top")) + "px");
 
 	}
 
@@ -315,20 +291,20 @@ function insert_slider(data, data_deputes, date_extent){
 	.attr("r", 9);
 
 	function move_slider(h) {
+
 		handle.attr("cx", x(h));
 
 		var scrutin_index = bisectDate(data, h);
 
 		var this_scrutin_votes = data[scrutin_index].all_votes;
 		var scrutin_title = data[scrutin_index].titre;
+		var scrutin_date = formatDayMonthYear(data[scrutin_index].date);
 
 		data_deputes.forEach(function(d){
 
 			d.vote = this_scrutin_votes['PA' + d.id_an]
 		})
-		changevote(data_deputes, scrutin_title);
-
-
+		changevote(data_deputes, scrutin_title, scrutin_date);
 
 	}
 
@@ -336,9 +312,6 @@ function insert_slider(data, data_deputes, date_extent){
 
 
 function insert_predictive_typing(data_scrutins, data_deputes){
-
-
-	console.log(data_scrutins);
 
 
 // constructs the suggestion engine
@@ -370,15 +343,21 @@ $('#remote .typeahead').on(
 
 		var this_scrutin_votes = datum.all_votes;
 		var scrutin_title = datum.titre;
+		var scrutin_date = formatDayMonthYear(datum.date);
 
 		data_deputes.forEach(function(d){
 
 			d.vote = this_scrutin_votes['PA' + d.id_an]
 		})
 
-		changevote(data_deputes, scrutin_title);
+		changevote(data_deputes, scrutin_title, scrutin_date);
 
-		d3.select('#initialize').html('<i class="material-icons material-icons--accent">cancel</i>');
+		d3.select('#initialize').html('<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">RESET '
+			+ '<i class="material-icons">cancel</i></button>');
+
+
+		d3.select('svg#slider g.slider .handle').attr("cx", x(datum.date));
+
 
 	},
 	'typeahead:autocompleted': function(e, datum) {
