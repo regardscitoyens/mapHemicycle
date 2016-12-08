@@ -107,7 +107,6 @@
 
 	loadGroupes();
 
-
 	function handleVotes(deputes, data){
 		if (!data) data = {};
 		Object.keys(typesVote).forEach(function(typ){
@@ -158,7 +157,7 @@
 
 		})
 
-		var all_scrutions_solennels = all_scrutins.filter(function(d){return d.type_vote == 'scrutin public solennel'});
+		var all_scrutions_solennels = all_scrutins.filter(function(d){return d.type_vote == 'scrutin public solennel' || d.type_vote == 'scrutin à la tribune'});
 		var date_extent = d3.extent(all_scrutions_solennels, function(d){ return d.date});
 		all_scrutins_numbers = all_scrutions_solennels.map(function(d){return d.numero});
 		
@@ -346,7 +345,7 @@ function insert_predictive_typing(data_scrutins, data_deputes){
 var data_scrutins_ = new Bloodhound({
 	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('clean_title'),
 	queryTokenizer: Bloodhound.tokenizers.whitespace,
-	local: data_scrutins
+	local: data_scrutins,
 });
 
 
@@ -354,6 +353,7 @@ $('#remote .typeahead').typeahead(null, {
 	name: 'scrutins-solennels',
 	source: data_scrutins_,
 	display: 'clean_title',
+	limit:10,
 	templates: {
 		empty: [
 		'<div class="empty-message">',
@@ -386,7 +386,6 @@ $('#remote .typeahead').on(
 
 		d3.select('svg#slider g.slider .handle').attr("cx", x(datum.date));
 
-
 	},
 	'typeahead:autocompleted': function(e, datum) {
 	}
@@ -398,10 +397,7 @@ d3.select('#initialize_input')
 	$('.typeahead').typeahead('val', '');
 });
 
-
-
 }
-
 
 
 function next_vote(data_deputes, data_scrutins, scrutin_title, scrutin_date, next){
@@ -410,37 +406,23 @@ function next_vote(data_deputes, data_scrutins, scrutin_title, scrutin_date, nex
 	var numero_index = _.findIndex(all_scrutins_numbers, function(d) { return d == numero; });
 
 	if (next == 'back'){
-
-		var numero_index_back = numero_index <= 0 ? 0 : numero_index -1;
-		var datum = data_scrutins[numero_index_back];
-		var this_scrutin_votes = datum.all_votes;
-		var scrutin_title = datum.titre;
-
-		data_deputes.forEach(function(d){
-
-			d.vote = this_scrutin_votes['PA' + d.id_an];
-			d.numero = datum.numero;
-		})
-
-		changevote(data_deputes, data_scrutins, scrutin_title, datum.date);
-
-		d3.select('svg#slider g.slider .handle').attr("cx", x(datum.date));
+		var numero_index_next = numero_index <= 0 ? 0 : numero_index -1;
 	}
 	else{
-
-		var numero_index_forward = numero_index >= all_scrutins_numbers.length -1 ? all_scrutins_numbers.length-1 : numero_index +1;
-		var datum = data_scrutins[numero_index_forward];
-		var this_scrutin_votes = datum.all_votes;
-		var scrutin_title = datum.titre;
-
-		data_deputes.forEach(function(d){
-
-			d.vote = this_scrutin_votes['PA' + d.id_an];
-			d.numero = datum.numero;
-		})
-
-		changevote(data_deputes, data_scrutins, scrutin_title, datum.date);
-		d3.select('svg#slider g.slider .handle').attr("cx", x(datum.date));
+		var numero_index_next = numero_index >= all_scrutins_numbers.length -1 ? all_scrutins_numbers.length-1 : numero_index +1;
 	}
+
+	var datum = data_scrutins[numero_index_next];
+	var this_scrutin_votes = datum.all_votes;
+	var scrutin_title = datum.titre;
+
+	data_deputes.forEach(function(d){
+
+		d.vote = this_scrutin_votes['PA' + d.id_an];
+		d.numero = datum.numero;
+	})
+
+	changevote(data_deputes, data_scrutins, scrutin_title, datum.date);
+	d3.select('svg#slider g.slider .handle').attr("cx", x(datum.date));
 
 }
