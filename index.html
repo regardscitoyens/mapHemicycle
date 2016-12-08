@@ -51,15 +51,12 @@
 				<button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  mdl-button--colored" onclick="loadGroupes()">Par Groupes politiques</button>
 				<br /><br />
 				<div id="remote">
-				    <div class="typeahead-container  mdl-textfield mdl-js-textfield">
-            <input id="theme_input" class="typeahead mdl-textfield__input" type="text" placeholder="Rechercher un thème">
-          </div>
-          <div id="initialize"> </div>
+					<div class="typeahead-container  mdl-textfield mdl-js-textfield">
+						<input id="theme_input" class="typeahead mdl-textfield__input" type="text" placeholder="Rechercher un thème">
+					</div>
+					<div id="initialize_input"> </div>
 
-          </div>
-
-
-				<br /><br />
+				</div>
 			</nav>
 		</div>
 		<main class="mdl-layout__content mdl-color--grey-100">
@@ -68,12 +65,23 @@
 					<svg width="900" height="50" id="slider" style="overflow:visible;"></svg>
 				</div>
 				<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-				<div id="texte_scrutin">
-				<div id= "date_scrutin"></div>
-				<h5 class="mdl-typography--headline" id= "titre_scrutin"></h5>
-				</div>
+					<div id="texte_scrutin">
+						<div id= "date_scrutin"></div>
+						<h5 class="mdl-typography--headline" id= "titre_scrutin"></h5>
+					</div>
 
 					<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid" id="map">
+					<div id="arrow_back">
+						<button class="mdl-button mdl-js-button mdl-button--fab">
+							<i class="material-icons">arrow_back</i>
+						</button>
+						</div>
+						<div id="arrow_forward">
+						<button class="mdl-button mdl-js-button mdl-button--fab">
+							<i class="material-icons">arrow_forward</i>
+						</button>
+						</div>
+
 
 					</div>
 				</div>

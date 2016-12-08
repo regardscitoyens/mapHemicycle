@@ -4,7 +4,8 @@
 	svg_map,
 	render_count = 0,
 	color,
-	groupesViz;
+	groupesViz,
+	all_scrutins_numbers;
 
 	var titre_scrutin = d3.select('#titre_scrutin');
 	var date_scrutin = d3.select('#date_scrutin');
@@ -15,6 +16,7 @@
 	var parseDate = d3.timeParse("%Y-%m-%d");
 	var timeScale = d3.scaleTime();
 	var bisectDate = d3.bisector(function(d) { return d.date; }).left;
+	var bisectNumLeft = d3.bisector(function(d) { return d.numero; }).left;
 
 	var svg_slider = d3.select("svg#slider"),
 	margin_slider = {right: 50, left: 50},
@@ -152,11 +154,14 @@
 			d.year = +getYear(d.date);
 			d.all_votes = parseList(d.all_votes);
 			d.clean_title = suppress_article(d.libelle);
+			d.numero = +d.numero;
 
 		})
 
 		var all_scrutions_solennels = all_scrutins.filter(function(d){return d.type_vote == 'scrutin public solennel'});
 		var date_extent = d3.extent(all_scrutions_solennels, function(d){ return d.date});
+		all_scrutins_numbers = all_scrutions_solennels.map(function(d){return d.numero});
+		
 
 		timeScale.domain(date_extent);
 
@@ -181,6 +186,13 @@
 			.attr('id', 'map_assemblee')
 			.call(responsivefy);
 
+			d3.select("#arrow_back").style('top', parseInt(svg_map.style("height"))/4 + "px");
+
+			d3.select("#arrow_forward")
+			.style('top', parseInt(svg_map.style("height"))/4 + "px")
+			.style('left', parseInt(svg_map.style("width"))*.85 + "px");
+
+
     // Colorize seat
     for (i in data_deputes){
 
@@ -202,7 +214,7 @@
 
 	}
 
-	function changevote(data_deputes, scrutin_title, scrutin_date){
+	function changevote(data_deputes, data_scrutins, scrutin_title, scrutin_date){
 
 		for (i in data_deputes){
 			var d = data_deputes[i];
@@ -215,9 +227,17 @@
 		}
 
 		titre_scrutin.html(suppress_article(scrutin_title));
-		date_scrutin.html('<button class="mdl-button mdl-js-button mdl-button--raised">' + scrutin_date + '</button>');
+		date_scrutin.html('<button class="mdl-button mdl-js-button mdl-button--raised">' + formatDayMonthYear(scrutin_date) + '</button>');
 		texte_scrutin.style("min-height", parseInt(titre_scrutin.style("line-height")) *3 +parseInt(date_scrutin.style("height")) 
 			+ parseInt(titre_scrutin.style("margin-bottom"))+ parseInt(titre_scrutin.style("margin-top")) + "px");
+
+		d3.select("#arrow_back")
+		.style('display', 'block')
+		.on('click', function() {next_vote(data_deputes, data_scrutins, scrutin_title, scrutin_date, 'back')});
+
+		d3.select("#arrow_forward")
+		.style('display', 'block')
+		.on('click', function() {next_vote(data_deputes, data_scrutins, scrutin_title, scrutin_date, 'forward')});
 
 	}
 
@@ -244,9 +264,17 @@
     function resize() {
 
     	var targetWidth = parseInt(container.style("width"));
+    	var targetHeight = Math.round(targetWidth / aspect);
 
     	svg.attr("width", targetWidth);
-    	svg.attr("height", Math.round(targetWidth / aspect));
+    	svg.attr("height", targetHeight);
+
+    	// d3.select("#arrow_back").style('bottom', Math.round(targetWidth / aspect)/4 + "px");
+    	d3.select("#arrow_back").style('top', targetHeight/4 + "px");
+
+    	d3.select("#arrow_forward")
+    	.style('top', targetHeight/4 + "px")
+    	.style('left', targetWidth*.85 + "px");
 
     }
 }
@@ -298,13 +326,13 @@ function insert_slider(data, data_deputes, date_extent){
 
 		var this_scrutin_votes = data[scrutin_index].all_votes;
 		var scrutin_title = data[scrutin_index].titre;
-		var scrutin_date = formatDayMonthYear(data[scrutin_index].date);
 
 		data_deputes.forEach(function(d){
 
-			d.vote = this_scrutin_votes['PA' + d.id_an]
+			d.vote = this_scrutin_votes['PA' + d.id_an];
+			d.numero = data[scrutin_index].numero;
 		})
-		changevote(data_deputes, scrutin_title, scrutin_date);
+		changevote(data_deputes, data, scrutin_title, data[scrutin_index].date);
 
 	}
 
@@ -318,7 +346,7 @@ function insert_predictive_typing(data_scrutins, data_deputes){
 var data_scrutins_ = new Bloodhound({
 	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('clean_title'),
 	queryTokenizer: Bloodhound.tokenizers.whitespace,
-  local: data_scrutins
+	local: data_scrutins
 });
 
 
@@ -326,13 +354,13 @@ $('#remote .typeahead').typeahead(null, {
 	name: 'scrutins-solennels',
 	source: data_scrutins_,
 	display: 'clean_title',
-  templates: {
-  	empty: [
-  	'<div class="empty-message">',
-  	'Pas de résultat',
-  	'</div>'
-  	].join('\n'),
-  }
+	templates: {
+		empty: [
+		'<div class="empty-message">',
+		'Pas de résultat',
+		'</div>'
+		].join('\n'),
+	}
 });
 
 
@@ -343,16 +371,16 @@ $('#remote .typeahead').on(
 
 		var this_scrutin_votes = datum.all_votes;
 		var scrutin_title = datum.titre;
-		var scrutin_date = formatDayMonthYear(datum.date);
 
 		data_deputes.forEach(function(d){
 
-			d.vote = this_scrutin_votes['PA' + d.id_an]
+			d.vote = this_scrutin_votes['PA' + d.id_an];
+			d.numero = datum.numero;
 		})
 
-		changevote(data_deputes, scrutin_title, scrutin_date);
+		changevote(data_deputes, data_scrutins, scrutin_title, datum.date);
 
-		d3.select('#initialize').html('<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">RESET '
+		d3.select('#initialize_input').html('<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">RESET '
 			+ '<i class="material-icons">cancel</i></button>');
 
 
@@ -364,13 +392,55 @@ $('#remote .typeahead').on(
 	}
 });
 
-d3.select('#initialize')
+d3.select('#initialize_input')
 .on('click', function(d){
-  d3.select('#initialize').html('');
-  $('.typeahead').typeahead('val', '');
+	d3.select('#initialize_input').html('');
+	$('.typeahead').typeahead('val', '');
 });
 
 
 
+}
+
+
+
+function next_vote(data_deputes, data_scrutins, scrutin_title, scrutin_date, next){
+
+	var numero = data_deputes[0].numero;
+	var numero_index = _.findIndex(all_scrutins_numbers, function(d) { return d == numero; });
+
+	if (next == 'back'){
+
+		var numero_index_back = numero_index <= 0 ? 0 : numero_index -1;
+		var datum = data_scrutins[numero_index_back];
+		var this_scrutin_votes = datum.all_votes;
+		var scrutin_title = datum.titre;
+
+		data_deputes.forEach(function(d){
+
+			d.vote = this_scrutin_votes['PA' + d.id_an];
+			d.numero = datum.numero;
+		})
+
+		changevote(data_deputes, data_scrutins, scrutin_title, datum.date);
+
+		d3.select('svg#slider g.slider .handle').attr("cx", x(datum.date));
+	}
+	else{
+
+		var numero_index_forward = numero_index >= all_scrutins_numbers.length -1 ? all_scrutins_numbers.length-1 : numero_index +1;
+		var datum = data_scrutins[numero_index_forward];
+		var this_scrutin_votes = datum.all_votes;
+		var scrutin_title = datum.titre;
+
+		data_deputes.forEach(function(d){
+
+			d.vote = this_scrutin_votes['PA' + d.id_an];
+			d.numero = datum.numero;
+		})
+
+		changevote(data_deputes, data_scrutins, scrutin_title, datum.date);
+		d3.select('svg#slider g.slider .handle').attr("cx", x(datum.date));
+	}
 
 }

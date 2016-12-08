@@ -443,13 +443,13 @@ _:-ms-input-placeholder, :root .dashboard-graph {
   color:#555;
 }
 
-#initialize{
+#initialize_input{
   cursor: pointer;
   color:red;
 }
 
 
-#initialize .mdl-button {
+#initialize_input .mdl-button {
     background: #dd4444;
 
   }
@@ -459,6 +459,15 @@ _:-ms-input-placeholder, :root .dashboard-graph {
 }
 
 #date_scrutin{
+}
+
+#arrow_back, #arrow_forward{
+
+  position: relative;
+  pointer-events: all;
+  cursor: pointer;
+  z-index: 100;
+  display: none;
 }
 
 @media (max-width: 767px) {
@@ -474,4 +483,11 @@ _:-ms-input-placeholder, :root .dashboard-graph {
   font-size: 13px;
 }
 
+
+#arrow_forward{
+
+  margin-left: -35px;
 }
+
+}
+
