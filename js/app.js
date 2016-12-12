@@ -29,6 +29,10 @@
 	var getYear = d3.timeFormat("%Y");
 	var tooltip = d3.select("#tooltip");
 
+	var barScale = d3.scaleLinear().range([0,70]);
+
+	var colorBarScale = d3.scaleOrdinal().range(['#22dd22', '#dd2222']).domain(['oui', 'non']);
+
 
 	var x = d3.scaleTime()
 	.range([0, width_slider])
@@ -154,8 +158,16 @@
 			d.all_votes = parseList(d.all_votes);
 			d.clean_title = suppress_article(d.libelle);
 			d.numero = +d.numero;
+			d.nombre_abstentions = +d.nombre_abstentions;
+			d.nombre_contre = +d.nombre_contre;
+			d.nombre_nonVotant = +d.nombre_nonVotant;
+			d.nombre_pour = +d.nombre_pour;
+			d.nombre_suffrages_exprimes = +d.nombre_suffrages_exprimes;
+			d.nombre_suffrages_requis = +d.nombre_suffrages_requis;
+			d.nombre_votants = +d.nombre_votants;
 
 		})
+
 
 		var all_scrutions_solennels = all_scrutins.filter(function(d){return d.type_vote == 'scrutin public solennel' || d.type_vote == 'scrutin à la tribune'});
 		var date_extent = d3.extent(all_scrutions_solennels, function(d){ return d.date});
@@ -185,11 +197,45 @@
 			.attr('id', 'map_assemblee')
 			.call(responsivefy);
 
-			d3.select("#arrow_back").style('top', parseInt(svg_map.style("height"))/4 + "px");
+			var svg_height = parseInt(svg_map.style("height"));
+			var svg_width = parseInt(svg_map.style("width"));
+
+			var infobox = svg_map.append('g')
+			.attr('id', 'infobox')
+			.attr('transform', 'translate(730,0)');
+
+			infobox
+			.append('rect')
+			.attr('id', 'border_rect')
+			.attr('width', '146px')
+			.attr('height', '100px')
+			.attr('rx', 10)
+			.attr('ry', 10)
+			.attr('fill', 'white')
+			.attr('stroke', '#ccc')
+			.attr('stroke-width', '1px')
+			.style('display', 'none')
+			;
+
+			infobox.append('text')
+			.attr('id', 'resultats_generaux')
+			.attr('x', 30)
+			.attr('y', 25);
+
+
+			var resultats_bars = infobox.append('g')
+			.attr('transform', 'translate(5, 40)')
+			.attr('id', 'resultats_bars');
+
+
+
+			d3.select("#arrow_back").style('top', svg_height/4 + "px");
 
 			d3.select("#arrow_forward")
-			.style('top', parseInt(svg_map.style("height"))/4 + "px")
-			.style('left', parseInt(svg_map.style("width"))*.85 + "px");
+			.style('top', svg_height/4 + "px")
+			.style('left', svg_width*.9 + "px");
+
+
 
 
     // Colorize seat
@@ -213,7 +259,10 @@
 
 	}
 
-	function changevote(data_deputes, data_scrutins, scrutin_title, scrutin_date){
+	function changevote(data_deputes, data_scrutins, scrutin_title, scrutin_date, scrutin_numero){
+
+		var datum = data_scrutins.filter(function(d){ return d.numero == scrutin_numero})[0];
+
 
 		for (i in data_deputes){
 			var d = data_deputes[i];
@@ -224,6 +273,74 @@
 			this_path
 			.attr('fill', (function(d){return colorVotes(d.vote)}));
 		}
+
+
+	barScale.domain([0, +datum['nombre_suffrages_exprimes']]);
+
+	var data_oui_non = [{'result':'oui', 'value':datum['nombre_pour']}, {'result':'non', 'value':datum['nombre_contre']}]
+
+
+	// data_oui_non.sort(function(d){return d.value});
+	data_oui_non.sort(function(a, b) { return d3.descending(a.value, b.value)});
+
+	d3.select("#border_rect").style('display', 'initial');
+
+	d3.select("#resultats_generaux")
+	.text(datum['resultat'].toUpperCase())
+	.attr('fill', datum['resultat'] == "adopté" ? "#22dd22" : "#dd2222")
+	.style('font-weight', 500)
+	;
+
+	
+
+	var summary_results = d3.select('#resultats_bars').selectAll('g')
+	.attr('transform', function(d,i){return 'translate(0,' + i*20 + ')'} )
+	.data(data_oui_non);
+
+
+	var summary_results_g = summary_results
+	.enter()
+	.append('g')
+	.attr('transform', function(d,i){return 'translate(0,' + i*20 + ')'} );
+
+	summary_results_g
+	.append('rect')
+	.attr('x', 35)
+	.attr('width', function(d){return barScale(d.value)})
+	.attr('height', 15)
+	.attr('fill', function(d){return colorBarScale(d.result)})
+	.merge(summary_results)
+	.select('rect')
+	.attr('width', function(d){return barScale(d.value)})
+	.attr('fill', function(d){return colorBarScale(d.result)})
+	;
+
+
+	summary_results_g
+	.append('text')
+	.attr('class', 'label')
+	.attr('y', 12)
+	.text(function(d){return d.result})
+	.merge(summary_results)
+	.select('text.label')
+	.text(function(d){return d.result})
+	;
+
+
+	summary_results_g
+	.append('text')
+	.attr('class', 'value')
+	.attr('y', 12)
+	.attr('x', function(d){return 40 +barScale(d.value)})
+	.text(function(d){return d.value})
+	.merge(summary_results)
+	.select('text.value')
+	.text(function(d){return d.value})
+	.attr('x', function(d){return 40 +barScale(d.value)})
+	;
+
+
+	summary_results.exit().remove();
 
 		titre_scrutin.html(suppress_article(scrutin_title));
 		date_scrutin.html('<button class="mdl-button mdl-js-button mdl-button--raised">' + formatDayMonthYear(scrutin_date) + '</button>');
@@ -273,7 +390,7 @@
 
     	d3.select("#arrow_forward")
     	.style('top', targetHeight/4 + "px")
-    	.style('left', targetWidth*.85 + "px");
+    	.style('left', targetWidth*.9 + "px");
 
     }
 }
@@ -331,7 +448,7 @@ function insert_slider(data, data_deputes, date_extent){
 			d.vote = this_scrutin_votes['PA' + d.id_an];
 			d.numero = data[scrutin_index].numero;
 		})
-		changevote(data_deputes, data, scrutin_title, data[scrutin_index].date);
+		changevote(data_deputes, data, scrutin_title, data[scrutin_index].date, data[scrutin_index].numero);
 
 	}
 
@@ -378,7 +495,7 @@ $('#remote .typeahead').on(
 			d.numero = datum.numero;
 		})
 
-		changevote(data_deputes, data_scrutins, scrutin_title, datum.date);
+		changevote(data_deputes, data_scrutins, scrutin_title, datum.date, datum.numero);
 
 		d3.select('#initialize_input').html('<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">RESET '
 			+ '<i class="material-icons">cancel</i></button>');
@@ -422,7 +539,7 @@ function next_vote(data_deputes, data_scrutins, scrutin_title, scrutin_date, nex
 		d.numero = datum.numero;
 	})
 
-	changevote(data_deputes, data_scrutins, scrutin_title, datum.date);
+	changevote(data_deputes, data_scrutins, scrutin_title, datum.date, datum.numero);
 	d3.select('svg#slider g.slider .handle').attr("cx", x(datum.date));
 
 }

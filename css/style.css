@@ -463,11 +463,28 @@ _:-ms-input-placeholder, :root .dashboard-graph {
 
 #arrow_back, #arrow_forward{
 
-  position: relative;
+  position: absolute;
   pointer-events: all;
   cursor: pointer;
   z-index: 100;
   display: none;
+}
+
+
+
+#map{
+
+  position: relative;
+}
+
+#resultats_bars text{
+font-size: 18px;
+
+}
+
+p.entete_scrutins{
+
+  margin-bottom: -5px
 }
 
 @media (max-width: 767px) {
@@ -485,8 +502,25 @@ _:-ms-input-placeholder, :root .dashboard-graph {
 
 
 #arrow_forward{
+margin-left: 30px;
+ 
+}
 
-  margin-left: -35px;
+#arrow_back button, #arrow_forward button{
+
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+}
+
+#arrow_back button i, #arrow_forward button i{
+
+  font-size: 18px;
+}
+
+#resultats_bars text{
+font-size: 20px;
+
 }
 
 }
