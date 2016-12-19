@@ -365,10 +365,10 @@ _:-ms-input-placeholder, :root .dashboard-graph {
       padding: 5px 12px;
       font-size: 15px;
       line-height: 24px;
-      border: 2px solid #ccc;
-      -webkit-border-radius: 8px;
+      border: 2px solid #fff;
+/*      -webkit-border-radius: 8px;
       -moz-border-radius: 8px;
-      border-radius: 8px;
+      border-radius: 8px;*/
       outline: none;
     }
 
@@ -397,9 +397,9 @@ _:-ms-input-placeholder, :root .dashboard-graph {
       background-color: #fff;
       border: 1px solid #ccc;
       border: 1px solid rgba(0, 0, 0, 0.2);
-      -webkit-border-radius: 8px;
+/*      -webkit-border-radius: 8px;
       -moz-border-radius: 8px;
-      border-radius: 8px;
+      border-radius: 8px;*/
       -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
       -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
       box-shadow: 0 5px 10px rgba(0,0,0,.2);
@@ -487,6 +487,40 @@ p.entete_scrutins{
   margin-bottom: -5px
 }
 
+
+path.focused{
+
+stroke-width: 6px;
+stroke-linejoin: miter;
+}
+
+circle#cercle_depute {
+    fill: #ccc;
+    fill-opacity: 0;
+    stroke: #aa55ee;
+    stroke-width: 4px;
+    stroke-opacity: 0.7;
+    pointer-events: none;
+
+}
+
+#namebox_title {
+fill: #aa55ee;
+font-weight: bold;
+}
+
+#namebox_name {
+
+}
+
+#namebox_vote {
+font-weight: bold;
+}
+
+.dashboard-card-wide{
+  width: 600px;
+}
+
 @media (max-width: 767px) {
 
 #titre_scrutin{
@@ -522,6 +556,7 @@ margin-left: 30px;
 font-size: 20px;
 
 }
+
 
 }
 
