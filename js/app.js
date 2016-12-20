@@ -226,7 +226,7 @@
             render_count = 1;
         }
 
-        d3.xml("img/hemicycle-an.svg?a=0").mimeType("image/svg+xml").get(function(error, xml) {
+        d3.xml("img/hemicycle-an.svg").mimeType("image/svg+xml").get(function(error, xml) {
 
             if (error) throw error;
 
