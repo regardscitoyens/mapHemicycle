@@ -49,7 +49,7 @@
 				<header id="header_left"  class="mdl-color--blue-grey-900">
 				</header>
 
-				<button  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  mdl-button--colored" onclick="loadGroupes()">Par Groupes politiques</button>
+				<button  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="loadGroupes()">Groupes politiques</button>
 				<br /><br />
 				<div id="predictive_typing_theme">
 					<div class="typeahead-container  mdl-textfield mdl-js-textfield">
@@ -70,10 +70,11 @@
 		<main class="mdl-layout__content mdl-color--grey-100">
 			<div class="mdl-grid dashboard-content">
 				<div class="dashboard-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-					<p class="entete_scrutins"><strong>Faire défiler les scrutins de la législature :</strong></p>
+					<p class="entete_scrutins"><strong>Faire défiler les scrutins de la législature :</strong></p><br />
 					<svg width="900" height="50" id="slider" style="overflow:visible;"></svg>
 					<div id="texte_scrutin">
-						<div id= "date_scrutin"></div>
+						<div> <span id= "date_scrutin"></span>
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" id="play_button">PLAY</button></div>
 						<h5 class="mdl-typography--headline" id= "titre_scrutin"></h5>
 					</div>
 
